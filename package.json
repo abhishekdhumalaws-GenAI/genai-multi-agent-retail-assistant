@@ -37,34 +37,34 @@
         }
     },
     "engines": {
-        "node": "22.19.0"
+        "node": "*"
     },
     "devDependencies": {
-        "@commitlint/cli": "^19.5.0",
-        "@commitlint/config-conventional": "^19.5.0",
-        "@commitlint/prompt-cli": "^19.5.0",
-        "@commitlint/types": "^19.5.0",
-        "@types/node": "22.7.9",
-        "@typescript-eslint/eslint-plugin": "^8.20.0",
-        "@typescript-eslint/parser": "^8.20.0",
-        "commitizen": "^4.3.1",
-        "cz-conventional-changelog": "^3.3.0",
-        "eslint": "^9.19.0",
-        "eslint-config-prettier": "^10.0.1",
-        "eslint-plugin-prettier": "^5.2.3",
-        "globals": "^15.14.0",
-        "husky": "^9.1.6",
-        "lint-staged": "^15.4.3",
-        "prettier": "^3.4.2",
-        "tsx": "^4.19.3",
-        "typescript": "~5.6.3",
-        "typescript-eslint": "^8.23.0"
+        "@commitlint/cli": "*",
+        "@commitlint/config-conventional": "*",
+        "@commitlint/prompt-cli": "*",
+        "@commitlint/types": "*",
+        "@types/node": "*",
+        "@typescript-eslint/eslint-plugin": "*",
+        "@typescript-eslint/parser": "*",
+        "commitizen": "*",
+        "cz-conventional-changelog": "*",
+        "eslint": "*",
+        "eslint-config-prettier": "*",
+        "eslint-plugin-prettier": "*",
+        "globals": "*",
+        "husky": "*",
+        "lint-staged": "*",
+        "prettier": "*",
+        "tsx": "*",
+        "typescript": "*",
+        "typescript-eslint": "*"
     },
     "dependencies": {
-        "@aws-sdk/client-cloudformation": "^3.772.0",
-        "chalk": "4.1.0",
-        "enquirer": "^2.4.1",
-        "yaml": "^2.7.0",
-        "zod": "^3.24.1"
+        "@aws-sdk/client-cloudformation": "*",
+        "chalk": "*",
+        "enquirer": "*",
+        "yaml": "*",
+        "zod": "*"
     }
 }
