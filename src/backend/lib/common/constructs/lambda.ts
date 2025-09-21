@@ -11,7 +11,7 @@ import { Construct } from "constructs";
 import * as path from "path";
 
 const commonFunctionProps = {
-    architecture: Architecture.ARM_64,
+    architecture: Architecture.X86_64,
     logRetention: RetentionDays.THREE_MONTHS,
 };
 
