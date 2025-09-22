@@ -5,14 +5,14 @@ import { PresetStageType, projectConfig } from "../../config";
 
 export const banner = () => {
     console.clear();
-    console.log(bold(magentaBright("Welcome to the Demo Starter Kit!")));
-    console.log(bold(magentaBright("Created by the GenAI Labs Team 🧪")));
+    console.log(bold(magentaBright("Welcome to the Production Deployment Kit!")));
+    console.log(bold(magentaBright("Crafted by CloudAge Global")));
 };
 
 export const bye = (exitCode: number = 1) => {
     // default exit code is 1 to indicate error pass 0 to exit gracefully
     if (exitCode === 0) {
-        console.log(bold(magentaBright("\nGoodbye! 👋\n")));
+        console.log(bold(magentaBright("\nGoodbye!\n")));
     } else {
         console.log("");
     }
