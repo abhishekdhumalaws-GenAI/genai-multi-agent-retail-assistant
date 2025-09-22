@@ -1,34 +1,7 @@
 # Multi-agent Collaboration (Customer Support Assistant)
 
-### Table of Contents
-1. [Overview](#overview)
-2. [Key Objectives](#key-objectives)
-3. [Use Case: Intelligent Customer Support](#use-case-intelligent-customer-support)
-4. [Agents Involved](#agents-involved)
-5. [Runtime Chatbot](#runtime-chatbot)
-6. [Architecture Design](#architecture-design)
-7. [Scope](#scope)
-   - a. [Natural Language Inquiry Handling](#natural-language-inquiry-handling)
-   - b. [Order Tracking and Management](#order-tracking-and-management)
-   - c. [Personalized Product Recommendations](#personalized-product-recommendations)
-   - d. [Technical Issue Resolution](#technical-issue-resolution)
-   - e. [Persistent Customer Profile for Personalized Service](#persistent-customer-profile-for-personalized-service)
-   - f. [Dynamic Response and Tool Access](#dynamic-response-and-tool-access)
-   - g. [Seamless Multi-Agent Coordination and Orchestration](#seamless-multi-agent-coordination-and-orchestration)
-8. [Getting started](#getting-started)
-9. [Cost](#cost)
-10. [Model access](#model-access)
-11. [Pre-Requisites](#pre-requisites)
-12. [Setup](#setup)
-   - [Clone repo & install dependencies](#clone-repo--install-dependencies)
-   - [Bootstrapping Account](#bootstrapping-account)
-   - [Setup website](#setup-website)
-   - [Run webapp locally](#run-webapp-locally)
-   - [Deploy Webapp to Amazon Cloudfront](#deploy-webapp-to-amazon-cloudfront)
-13. [Cleanup](#cleanup)
-
 ## Overview  
-This project focuses on developing and implementing robust multi-agent collaboration capabilities for Amazon Bedrock Agents. The goal is to enhance the platform's ability to handle complex, real-world business scenarios that require coordinated efforts across specialized AI agents. Multiple agents will gather information from various datasources by using semantic search, and creating SQL queries from natural language to fetch data from databases. Click [here](https://aws.storylane.io/share/otdlltvd8jz7) if interested in an interactive click through demo. 
+This project focuses on developing and implementing robust multi-agent collaboration capabilities for Amazon Bedrock Agents. The goal is to enhance the platform's ability to handle complex, real-world business scenarios that require coordinated efforts across specialized AI agents. Multiple agents will gather information from various datasources by using semantic search, and creating SQL queries from natural language to fetch data from databases.
 
 ### Key Objectives
 
@@ -107,11 +80,6 @@ The runtime chatbot is a React-based website that uses a WebSocket API and a Lam
 
 This scope showcases the multi-agent system’s ability to deliver an efficient, personalized, and user-friendly customer support experience. The setup leverages Bedrock's orchestration and data-handling capabilities to deliver comprehensive and real-time support solutions.
 
-
-
-## Getting started
-Let's start by enabling the models we need for the application. Navigate to the Amazon Bedrock console, and enable the following models:
-
 ## Cost
 You are responsible for the cost of the AWS services used while running this Guidance. As of October 2024, the cost for running this Guidance with the default settings in the US West (Oregon) AWS Region is approximately $606.14 per month for processing 100,000 requests with an input/output token count average of 700K.
 
@@ -156,54 +124,24 @@ Navigate to the Amazon Bedrock console, and enable the following models:
 
 ## Pre-Requisites
 
-### Run Docker
-
-Because of restrictions of licensing on [Docker in Docker support](https://gitlab.pages.aws.dev/docs/Platform/gitlab-cicd.html#shared-runner-fleet), an alternative will need to be used. Success was found using [Rancher Desktop](https://rancherdesktop.io/), but you can use your Docker engine of choice. After install, you will need to allow the image `public.ecr.aws/sam/build-python3.12:latest` for the Python 3.12 build found on our official site [here](https://gallery.ecr.aws/sam/build-python3.12). 
-
-
-### AWS CLI
-
-Install `aws-cli` from [here](https://aws.amazon.com/cli/). Now, we need to configure our credentials.
-
-```bash
-aws configure
-AWS Access Key ID [**********************]: 
-AWS Secret Access Key [********************]:
-Default region name us-east-1
-Default output format: json
-
-```
+1. Install Docker
+2. Install Node with NPM
+3. Install aws-cli
 
 ---
 
-## Setup
+## Deployment
 
-
-### Clone repo & install dependencies
-clone the repo from <https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws>
-
-```bash
-git clone https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws.git
-cd guidance-for-multi-agent-orchestration-on-aws
+```cd genai-projects/multi-agent
+   ./deploy.sh
 ```
+After Deployment Choose Option 9 & Exit
 
-We are all set to install dependencies by using the following command. This will install `npm` dependencies required to run the app. Then, we will boostratp the account.
+Run
 
-```bash
-npm i
+```./cognito-user.sh
 ```
-
-### Bootstrapping account
-
-```bash
-cdk bootstrap aws://{ACCOUNT_ID}/{REGION}
-```
-
-### Authenticate to ECR
-
-```bash
-aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
-```
+To Create Application User.
 
 ### Setup environment variables for Bedrock agents
 
@@ -216,7 +154,7 @@ The CDK stack automatically:
 3. Passes these as environment variables to the frontend build process
 4. Injects them into the application at build time
 
-#### For local development:
+#### For POC deployments:
 After deploying the CDK stack, we can set up the environment:
 
 
@@ -235,9 +173,7 @@ Edit the variables -
     }
 ```
 
-### Setup website using the Starter kit
-
-Run this command to start the starter kit. 
+### Setup website using the Production kit
 
 ```bash
 npm run develop
@@ -251,7 +187,6 @@ This starter kit includes ready-to-deploy, compliant and secure CDK and React ap
 
 To deploy the stack, select the option - ***3. Deploy CDK Stack(s) 🚀***. Select environment, then yes, and let it deploy.
 
-Next, select the option ***5. Deploy Frontend 🖥️***. Let it finish deploying. 
 
 ### Amazon Athena
 - Before we run the app, we need to manually set the Amazon Athena output bucket (This will be automated on the next revision). In the AWS console, search for the Amazon Athena service, then navigate to the Athena management console. Validate that the ***Query your data with Trino SQL*** radio button is selected, then press ***Launch query editor***.
@@ -263,9 +198,7 @@ Next, select the option ***5. Deploy Frontend 🖥️***. Let it finish deployin
 
 
 - Add the S3 prefix below for the query results location, then select the ***Save*** button.
-```bash
-s3://dev-mac-demo-backend-storageathenaresultsbucket-xxx
-```
+
 ![athena3](docs/kit/images/athena3.png)
 
 
@@ -289,3 +222,15 @@ You also have a the cloudfront url created in the terminal to access the applica
 
 ---
 
+## Cleanup
+```bash
+npm run develop
+```
+Then select the option to destroy stack & coose all stacks.
+
+After deletion exit the kit.
+
+& Run
+```./cleanup.sh
+```
+---
