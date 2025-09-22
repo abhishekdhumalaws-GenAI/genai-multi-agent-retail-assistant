@@ -1,8 +1,8 @@
 {
     "name": "backend",
     "version": "1.0.0",
-    "author": "GenAI Labs Team",
-    "license": "Apache License Version 2.0",
+    "author": "CloudAge Global",
+    "license": "CloudAge Confidential",
     "private": true,
     "bin": {
         "demo": "bin/demo.js"
