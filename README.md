@@ -7,7 +7,7 @@
 4. [Agents Involved](#agents-involved)
 5. [Runtime Chatbot](#runtime-chatbot)
 6. [Architecture Design](#architecture-design)
-7. [Demo Scope](#demo-scope)
+7. [Scope](#scope)
    - a. [Natural Language Inquiry Handling](#natural-language-inquiry-handling)
    - b. [Order Tracking and Management](#order-tracking-and-management)
    - c. [Personalized Product Recommendations](#personalized-product-recommendations)
@@ -81,7 +81,7 @@ The runtime chatbot is a React-based website that uses a WebSocket API and a Lam
 
 
 
-## Demo Scope
+## Scope
 
 1. **Natural Language Inquiry Handling**  
    The Customer Intake Agent captures the customer’s inquiry in natural language, interprets the intent, and routes it to the appropriate specialized agent (e.g., Order Management, Product Recommendation, or Troubleshooting).
@@ -105,7 +105,7 @@ The runtime chatbot is a React-based website that uses a WebSocket API and a Lam
    The Orchestration Agent monitors agent progress, manages inter-agent communication, and ensures a seamless customer experience by coordinating the efforts of the Customer Intake, specialized, and Personalization agents.
 
 
-This demo scope showcases the multi-agent system’s ability to deliver an efficient, personalized, and user-friendly customer support experience. The setup leverages Bedrock's orchestration and data-handling capabilities to deliver comprehensive and real-time support solutions.
+This scope showcases the multi-agent system’s ability to deliver an efficient, personalized, and user-friendly customer support experience. The setup leverages Bedrock's orchestration and data-handling capabilities to deliver comprehensive and real-time support solutions.
 
 
 
@@ -289,11 +289,3 @@ You also have a the cloudfront url created in the terminal to access the applica
 
 ---
 
-
-## Authors and acknowledgment
-
-Show your appreciation to those who have contributed to the project.
-
-## License
-
-[Amazon Software License 1.0](/LICENSE)
