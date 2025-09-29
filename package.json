@@ -57,14 +57,14 @@
         "lint-staged": "*",
         "prettier": "*",
         "tsx": "*",
-        "typescript": "*",
+        "typescript": "^5.0.0",
         "typescript-eslint": "*"
     },
     "dependencies": {
         "@aws-sdk/client-cloudformation": "*",
-        "chalk": "*",
-        "enquirer": "*",
-        "yaml": "*",
-        "zod": "*"
+        "chalk": "latest",
+        "enquirer": "latest",
+        "yaml": "latest",
+        "zod": "latest"
     }
 }
