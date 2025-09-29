@@ -172,7 +172,7 @@ export const getStackPrefix = (stage: string): string => {
 
 /**
  * Converts CDK stack path notation to CloudFormation-compatible stack names.
- * CDK uses paths like "dev/mac-demo" but CloudFormation requires names without slashes.
+ * CDK uses paths like "prod/mac-prod" but CloudFormation requires names without slashes.
  */
 export const getCfnStackName = (cdkStackPath: string): string => {
     // Replace all slashes with hyphens to make CloudFormation-compatible

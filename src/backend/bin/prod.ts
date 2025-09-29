@@ -8,17 +8,17 @@ const app = new App({
         stackPrefix: projectConfig.projectId,
     },
 });
-const stage = app.node.tryGetContext("stage") || PresetStageType.Dev;
+const stage = app.node.tryGetContext("stage") || PresetStageType.Prod;
 const account = projectConfig.accounts[stage];
 const properties = {
     env: {
         account: account.number,
         region: account.region,
     },
-    description : "Guidance for Multi-agent Orchestration (SO9035)"
+    description : "Guidance for Multi Agent Orchestration (SO9035)"
 };
 
-if (projectConfig.codePipeline && stage === PresetStageType.Dev) {
+if (projectConfig.codePipeline && stage === PresetStageType.Prod) {
     // this stack must be named pipeline
     new PipelineStack(app, "pipeline", properties);
 } else {

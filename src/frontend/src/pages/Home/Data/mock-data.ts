@@ -1508,7 +1508,7 @@ export const mockCustomerPreferences = [
 // Function to fetch customer feedback data from text file
 export const fetchCustomerFeedback = async () => {
   try {
-    // For demo purposes, returning hardcoded data directly to avoid fetch errors during build
+    // For production purposes, returning hardcoded data directly to avoid fetch errors during build
     return `1. Feedback Date: 2024-11-05  
    "Im genuinely impressed with the recommendations for electronics. The SonicWave Bluetooth Speaker was exactly what I needed for my small gatherings. The sound quality and battery life are perfect for my needs. Great job!"
 
@@ -1592,7 +1592,7 @@ export const fetchCustomerFeedback = async () => {
 // Function to fetch browse history data from text file
 export const fetchBrowseHistory = async () => {
   try {
-    // For demo purposes, returning hardcoded data directly to avoid fetch errors during build
+    // For production purposes, returning hardcoded data directly to avoid fetch errors during build
     return `Customer ID: CUST001
 
 - Date: 2024-11-12, Session Start: 13:25  
@@ -1819,7 +1819,7 @@ Customer ID: CUST016
 export const fetchFAQData = async () => {
   try {
     // In a real application, you would fetch this from an API endpoint
-    // For demo purposes, we'll return the text directly
+    // For production purposes, we'll return the text directly
     const faqText = `# Frequently Asked Questions
 
 ## General Product Questions
@@ -1937,7 +1937,7 @@ A: Factory reset procedures vary by product. Please consult your device's user m
 export const fetchTroubleshootingData = async () => {
   try {
     // In a real application, you would fetch this from an API endpoint
-    // For demo purposes, we'll return the text directly
+    // For production purposes, we'll return the text directly
     const tsText = `Product Name: ZenSound Wireless Headphones  
 Category: Headphones  
 Issue ID: HD001  

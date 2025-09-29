@@ -5,7 +5,7 @@
     "license": "CloudAge Confidential",
     "private": true,
     "bin": {
-        "demo": "bin/demo.js"
+        "prod": "bin/prod.js"
     },
     "scripts": {
         "build": "tsc",

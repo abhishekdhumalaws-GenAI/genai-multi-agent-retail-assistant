@@ -1,7 +1,7 @@
 /**
  * Sample Lambda function showing how to process trace data with the new traceMetadata field
  * 
- * This function demonstrates how to handle both the original trace field (for backward compatibility)
+ * This function shows how to handle both the original trace field (for backward compatibility)
  * and the new traceMetadata field that includes all agent metadata for proper identification.
  */
 import { AppSyncResolverEvent } from 'aws-lambda';

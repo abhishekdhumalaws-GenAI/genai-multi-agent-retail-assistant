@@ -1,7 +1,7 @@
-# Multi-agent Collaboration (Customer Support Assistant)
+# Multi Agent Orchestration (Customer Support Assistant)
 
 ## Overview  
-This project focuses on developing and implementing robust multi-agent collaboration capabilities for Amazon Bedrock Agents. The goal is to enhance the platform's ability to handle complex, real-world business scenarios that require coordinated efforts across specialized AI agents. Multiple agents will gather information from various datasources by using semantic search, and creating SQL queries from natural language to fetch data from databases.
+This project focuses on developing and implementing robust Multi Agent Orchestration capabilities for Amazon Bedrock Agents. The goal is to enhance the platform's ability to handle complex, real-world business scenarios that require coordinated efforts across specialized AI agents. Multiple agents will gather information from various datasources by using semantic search, and creating SQL queries from natural language to fetch data from databases.
 
 ### Key Objectives
 
@@ -9,11 +9,11 @@ This project focuses on developing and implementing robust multi-agent collabora
 - Implement task decomposition and delegation mechanisms
 - Ensure goal alignment across multiple agents
 - Address foundational issues such as latency reduction and stability improvements
-- Enhance usability to provide a solid base for multi-agent operations
+- Enhance usability to provide a solid base for Multi Agent Orchestration operations
 
 ## Use Case: Intelligent Customer Support
 
-To demonstrate the capabilities of our multi-agent system, we've developed an intelligent customer support solution for a large retailer. This use case showcases how multiple specialized agents can collaborate to provide comprehensive, personalized support to customers.
+To showcase the capabilities of our Multi Agent Orchestration system, we've developed an intelligent customer support solution for a large retailer. This use case showcases how multiple specialized agents can collaborate to provide comprehensive, personalized support to customers.
 
 ### Agents Involved
 
@@ -78,7 +78,7 @@ The runtime chatbot is a React-based website that uses a WebSocket API and a Lam
    The Orchestration Agent monitors agent progress, manages inter-agent communication, and ensures a seamless customer experience by coordinating the efforts of the Customer Intake, specialized, and Personalization agents.
 
 
-This scope showcases the multi-agent system’s ability to deliver an efficient, personalized, and user-friendly customer support experience. The setup leverages Bedrock's orchestration and data-handling capabilities to deliver comprehensive and real-time support solutions.
+This scope showcases the Multi Agent Orchestration system's ability to deliver an efficient, personalized, and user-friendly customer support experience. The setup leverages Bedrock's orchestration and data-handling capabilities to deliver comprehensive and real-time support solutions.
 
 ## Cost
 You are responsible for the cost of the AWS services used while running this Guidance. As of October 2024, the cost for running this Guidance with the default settings in the US West (Oregon) AWS Region is approximately $606.14 per month for processing 100,000 requests with an input/output token count average of 700K.
@@ -182,7 +182,7 @@ npm run develop
 ![cli-welcome](./docs/kit/images/cli-welcome.png)
 
 
-This starter kit includes ready-to-deploy, compliant and secure CDK and React app components with Cognito integration. It also includes customizable CLI tooling for easier demo configuration and management. While we offer this set of components and tools, you retain the freedom to customize any and all aspects of the starter kit to fit your use case (even if it has nothing to do with GenAI).
+This starter kit includes ready-to-deploy, compliant and secure CDK and React app components with Cognito integration. It also includes customizable CLI tooling for easier production configuration and management. While we offer this set of components and tools, you retain the freedom to customize any and all aspects of the starter kit to fit your use case (even if it has nothing to do with GenAI).
 
 
 To deploy the stack, select the option - ***3. Deploy CDK Stack(s) 🚀***. Select environment, then yes, and let it deploy.

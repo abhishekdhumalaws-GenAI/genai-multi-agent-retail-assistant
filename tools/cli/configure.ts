@@ -61,23 +61,23 @@ const bootstrapAccount = async (account: AccountConfig, stage: string) => {
     console.log(blueBright(`\nBootstrapping ${stage} account ${account.number}...`));
     try {
         if (stage === PresetStageType.Prod) {
-            // enable termination protection & trust dev account
-            const devAccountNumber = projectConfig.accounts[PresetStageType.Dev]?.number;
+            // enable termination protection & trust prod account
+            const prodAccountNumber = projectConfig.accounts[PresetStageType.Prod]?.number;
             console.log(
                 blueBright(
-                    `\nEnabling termination protection for ${stage} account ${account.number} and setting up trust with dev account ${devAccountNumber}...`
+                    `\nEnabling termination protection for ${stage} account ${account.number} and setting up trust with prod account ${prodAccountNumber}...`
                 )
             );
             await executeCommand(
                 `npm run -w backend cdk bootstrap aws://${account.number}/${account.region} -- ` +
                     `--cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess ` +
-                    `--termination-protection --trust ${devAccountNumber} ` +
+                    `--termination-protection --trust ${prodAccountNumber} ` +
                     `--profile ${getProfileName(stage)}`
             );
             await executeCommand(
                 `npm run -w backend cdk bootstrap aws://${account.number}/us-east-1 -- ` +
                     `--cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess ` +
-                    `--termination-protection --trust ${devAccountNumber} ` +
+                    `--termination-protection --trust ${prodAccountNumber} ` +
                     `--profile ${getProfileName(stage)}`
             );
         } else {
@@ -136,7 +136,7 @@ const main = async () => {
         bye(0);
     }
 
-    await refreshCredentials(PresetStageType.Dev);
+    await refreshCredentials(PresetStageType.Prod);
 
     for (const stage of Object.keys(projectConfig.accounts)) {
         await initializeStage(stage);

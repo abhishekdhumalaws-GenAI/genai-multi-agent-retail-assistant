@@ -7,7 +7,7 @@ import { FlashbarContext } from "../../../contexts/Flashbar";
 import { cleanupAllSubscriptions, setSigningOutState } from "../../../../utilities/authSubscriptionCleanup";
 import Favicon from "./favicon.png";
 
-const APP_NAME = "Multi-agent Collaboration";
+const APP_NAME = "Multi Agent Orchestration";
 
 interface AuthedUser {
     userName: string;

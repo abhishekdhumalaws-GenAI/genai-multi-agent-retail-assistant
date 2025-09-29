@@ -1,6 +1,6 @@
 {
-    "name": "multiagent-collaboration",
-    "description": "Enterprise Grade Generative Ai Customer Support Agent",
+    "name": "multi-agent-orchestration",
+    "description": "Multi Agent Orchestration - Enterprise Grade Generative Ai Customer Support Agent",
     "version": "2.0.0-prod",
     "author": "CloudAge Global",
     "license": "CloudAge Confidentail",

@@ -150,7 +150,7 @@ const createLocalEnvironment = async (stage: string): Promise<boolean> => {
     
     // Only check the specific stack format known to work
     const frontendDeployment = "frontendDeployment";
-    const stackName = `${stage}-${projectConfig.projectId}-${frontendDeployment}`; // dev-mac-demo-frontendDeployment
+    const stackName = `${stage}-${projectConfig.projectId}-${frontendDeployment}`; // prod-mac-prod-frontendDeployment
     
     console.log(blueBright(`\nChecking for stack: ${stackName}`));
     
@@ -380,7 +380,7 @@ const createLocalServer = async (stage: string): Promise<void> => {
     }
 
     const command =
-        process.platform === "win32" ? "npm run -w frontend dev" : "(npm run -w frontend dev &)";
+        process.platform === "win32" ? "npm run -w frontend prod" : "(npm run -w frontend prod &)";
     await executeCommand(command);
     await new Promise((resolve) => setTimeout(resolve, 1500)); // 1.5 second delay for serving
 

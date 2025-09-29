@@ -16,7 +16,7 @@ import { onUpdateChat } from "../../../common/graphql/subscriptions";
 import { sendMessage } from "./api";
 import { AgentFlowPanel } from '../../../common/components/react_flow/AgentFlowPanel';
 import SampleQuestions from "./SampleQuestions";
-import HowToUseDemo from "./HowToUseDemo";
+import HowToUseProd from "./HowToUseProd";
 import InitialWorkflowImage from "./InitialWorkflowImage";
 import DataTabs from "../Data";
 import { parseTraceData, registerMessageHandler, unregisterMessageHandler, generateConnectionId } from '../../../utilities/multiWebsocket';
@@ -2146,9 +2146,9 @@ const handleInputFocus = () => {
     
     return (
         <>
-            {/* How to use this demo - spans full width */}
+            {/* How to use this production system - spans full width */}
             <Box margin={{ bottom: "l" }} padding={{ horizontal: "s" }}>
-                <HowToUseDemo />
+                <HowToUseProd />
             </Box>
             
             {/* Tabs for Chat and Data */}

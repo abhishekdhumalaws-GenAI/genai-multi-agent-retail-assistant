@@ -188,38 +188,38 @@ export const getAllAgentMappings = (): Record<string, string> => {
 };
 
 /**
- * Attempts to load config from a local file for development environments
- * This allows developers to set up their local configs without env vars
+ * Attempts to load config from a local file for production environments
+ * This allows production setup without env vars
  */
-const loadLocalDevConfig = (): Record<string, string> => {
+const loadLocalProdConfig = (): Record<string, string> => {
   try {
-    // Only attempt to load local config in development mode
-    if (import.meta.env.DEV) {
-      // Dynamic import to prevent bundling in production
-      // This would typically load from a local file like .env.local or dev-config.json
-      // that's gitignored but contains developer-specific settings
-      const localConfig = localStorage.getItem('dev-agent-config');
+    // Only attempt to load local config in production mode
+    if (import.meta.env.PROD) {
+      // Dynamic import to prevent bundling in development
+      // This would typically load from a local file like .env.local or prod-config.json
+      // that's gitignored but contains production-specific settings
+      const localConfig = localStorage.getItem('prod-agent-config');
       if (localConfig) {
         try {
           return JSON.parse(localConfig);
         } catch (e) {
-          console.warn('Failed to parse local dev config', e);
+          console.warn('Failed to parse local prod config', e);
         }
       }
     }
   } catch (e) {
-    console.debug('No local dev config available');
+    console.debug('No local prod config available');
   }
   
   return {};
 };
 
 /**
- * Load agent configuration from environment variables or local development config
+ * Load agent configuration from environment variables or local production config
  * 
  * This function prioritizes:
  * 1. Environment variables (injected at build time by deployment pipeline)
- * 2. Local development configuration (for developer environments)
+ * 2. Local production configuration (for production environments)
  * 3. If neither is available, it provides clear error messages instead of fallbacks
  */
 const loadAgentConfig = (): AgentConfig => {
@@ -239,19 +239,19 @@ const loadAgentConfig = (): AgentConfig => {
     [CONFIG_KEYS.ORDER_MANAGEMENT_ALIAS_ID]: import.meta.env.VITE_ORDER_MANAGEMENT_ALIAS_ID,
   };
 
-  // Load local development config if available
-  const localDevConfig = loadLocalDevConfig();
+  // Load local production config if available
+  const localProdConfig = loadLocalProdConfig();
 
   // Combine configurations with environment variables taking precedence
-  const combinedConfig = { ...localDevConfig, ...envConfig };
+  const combinedConfig = { ...localProdConfig, ...envConfig };
   
-  // For development, provide default values if missing to avoid build failures
-  if (import.meta.env.DEV) {
+  // For production, provide default values if missing to avoid build failures
+  if (import.meta.env.PROD) {
     // Fill in any missing values with placeholders
     Object.keys(CONFIG_KEYS).forEach(key => {
       const configKey = CONFIG_KEYS[key as keyof typeof CONFIG_KEYS];
       if (!combinedConfig[configKey]) {
-        combinedConfig[configKey] = `dev-placeholder-${configKey.toLowerCase().replace('vite_', '')}`;
+        combinedConfig[configKey] = `prod-placeholder-${configKey.toLowerCase().replace('vite_', '')}`;
       }
     });
   }
@@ -288,23 +288,23 @@ const loadAgentConfig = (): AgentConfig => {
 export const agentConfig = loadAgentConfig();
 
 /**
- * Helper function to set up development environment configuration
- * Use this in the browser console during development to configure agent IDs
+ * Helper function to set up production environment configuration
+ * Use this in the browser console during production to configure agent IDs
  */
-export const setDevAgentConfig = (config: Partial<Record<keyof typeof CONFIG_KEYS, string>>) => {
-  if (!import.meta.env.DEV) {
-    console.error('Development configuration can only be set in development mode');
+export const setProdAgentConfig = (config: Partial<Record<keyof typeof CONFIG_KEYS, string>>) => {
+  if (!import.meta.env.PROD) {
+    console.error('Production configuration can only be set in production mode');
     return false;
   }
 
   try {
-    const existingConfig = JSON.parse(localStorage.getItem('dev-agent-config') || '{}');
+    const existingConfig = JSON.parse(localStorage.getItem('prod-agent-config') || '{}');
     const newConfig = { ...existingConfig, ...config };
-    localStorage.setItem('dev-agent-config', JSON.stringify(newConfig));
-    console.log('Development configuration updated. Reload the page to apply changes.');
+    localStorage.setItem('prod-agent-config', JSON.stringify(newConfig));
+    console.log('Production configuration updated. Reload the page to apply changes.');
     return true;
   } catch (e) {
-    console.error('Failed to save development configuration', e);
+    console.error('Failed to save production configuration', e);
     return false;
   }
 };

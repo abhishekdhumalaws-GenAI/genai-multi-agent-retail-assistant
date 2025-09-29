@@ -2081,26 +2081,26 @@ export function debugTraceDetection(traceData: any) {
   return 'Debug complete - see console for results';
 }
 
-// Helper function to set up development environment configuration for agent IDs
-export function setupDevAgentConfig() {
-  if (!import.meta.env.DEV) {
-    console.error('Development configuration can only be set in development mode');
+// Helper function to set up production environment configuration for agent IDs
+export function setupProdAgentConfig() {
+  if (!import.meta.env.PROD) {
+    console.error('Production configuration can only be set in production mode');
     return false;
   }
 
   try {
-    // Set reasonable default values for development
+    // Set reasonable default values for production
     const config = {
       VITE_ROUTING_CLASSIFIER_AGENT_ID: "routing-classifier-agent-id",
       VITE_ROUTING_CLASSIFIER_ALIAS_ID: "routing-classifier-alias-id"
     };
 
-    localStorage.setItem('dev-agent-config', JSON.stringify(config));
-    console.log('Development configuration set up with default values. Reload the page to apply changes.');
+    localStorage.setItem('prod-agent-config', JSON.stringify(config));
+    console.log('Production configuration set up with default values. Reload the page to apply changes.');
     console.log('Config values:', config);
     return true;
   } catch (e) {
-    console.error('Failed to save development configuration', e);
+    console.error('Failed to save production configuration', e);
     return false;
   }
 }

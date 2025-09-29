@@ -16,7 +16,7 @@ import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
-import SimpleStreamingDemo from "./utilities/simpleStreamingComponent";
+import SimpleStreamingProd from "./utilities/simpleStreamingComponent";
 
 const LOCALE = "en";
 
@@ -203,7 +203,7 @@ export default function App() {
     const commonRoutes = [
         {
             path: "/simple-streaming",
-            element: <SimpleStreamingDemo />,
+            element: <SimpleStreamingProd />,
             errorElement: <Error />,
         }
     ];

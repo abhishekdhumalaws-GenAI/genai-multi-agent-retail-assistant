@@ -150,7 +150,7 @@ const createLocalEnvironment = async (stage: string): Promise<boolean> => {
     
     // Only check the specific stack format known to work
     const frontendDeployment = "frontendDeployment";
-    const stackName = `${stage}-${projectConfig.projectId}-${frontendDeployment}`; // dev-mac-demo-frontendDeployment
+    const stackName = `${stage}-${projectConfig.projectId}-${frontendDeployment}`; // prod-mac-prod-frontendDeployment
     
     console.log(blueBright(`\nChecking for stack: ${stackName}`));
     

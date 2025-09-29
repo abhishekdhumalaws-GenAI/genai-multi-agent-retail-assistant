@@ -88,9 +88,9 @@ const loadProjectConfig = (): ProjectConfig => {
         process.exit(1);
     }
 
-    // if no stage is provided, the app defaults to dev so it must be present
-    if (!projectConfig.accounts[PresetStageType.Dev]) {
-        console.error(redBright(`\n🛑 Missing dev account in configuration file.\n`));
+    // if no stage is provided, the app defaults to prod so it must be present
+    if (!projectConfig.accounts[PresetStageType.Prod]) {
+        console.error(redBright(`\n🛑 Missing prod account in configuration file.\n`));
         process.exit(1);
     }
 

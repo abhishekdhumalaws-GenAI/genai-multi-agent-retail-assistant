@@ -13,7 +13,7 @@ const BUCKET_CACHE_KEY = 'last_successful_s3_bucket';
 
 // Known patterns for the bucket names based on CDK deployment
 const BUCKET_PATTERNS = [
-  'dev-mac-demo-backend-storagestructureddatabucket' // The actual bucket pattern
+  'prod-mac-prod-backend-storagestructureddatabucket' // The actual bucket pattern
 ];
 
 /**
@@ -41,9 +41,9 @@ function getPotentialBucketNames(providedBucket?: string): string[] {
   }
   
   // Add the known bucket names we found
-  bucketNames.push('dev-mac-demo-backend-storagestructureddatabucket4f-tazj0etake3z');
-  bucketNames.push('dev-mac-demo-backend-multiagentproductrecommendati-vrkyyjn5iaar');
-  bucketNames.push('dev-mac-demo-backend-multiagentpersonalizationsuba-hvjtnkt9yhse');
+  bucketNames.push('prod-mac-prod-backend-storagestructureddatabucket4f-tazj0etake3z');
+  bucketNames.push('prod-mac-prod-backend-multiagentproductrecommendati-vrkyyjn5iaar');
+  bucketNames.push('prod-mac-prod-backend-multiagentpersonalizationsuba-hvjtnkt9yhse');
   
   // Add other potential patterns
   BUCKET_PATTERNS.forEach(pattern => {

@@ -3,10 +3,10 @@ import Box from "@cloudscape-design/components/box";
 import Container from "@cloudscape-design/components/container";
 import Header from "@cloudscape-design/components/header";
 
-const HowToUseDemo: React.FC = () => {
+const HowToUseProd: React.FC = () => {
   return (
     <Container
-      header={<Header variant="h3">How to use this demo</Header>}
+      header={<Header variant="h3">How to use this production system</Header>}
       variant="stacked"
     >
       <Box >
@@ -18,4 +18,4 @@ const HowToUseDemo: React.FC = () => {
   );
 };
 
-export default HowToUseDemo;
+export default HowToUseProd;

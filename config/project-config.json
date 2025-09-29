@@ -1,12 +1,12 @@
 {
-    "projectId": "mac-demo",
-    "gitlabGroup": "genai-labs/demo-assets",
-    "gitlabProject": "multiagent-collaboration",
+    "projectId": "mac-prod",
+    "gitlabGroup": "genai-labs/prod-assets",
+    "gitlabProject": "multi-agent-orchestration",
     "codeArtifact": false,
     "codePipeline": false,
     "midway": false,
     "accounts": {
-        "dev": {
+        "prod": {
             "number": "706769905020",
             "region": "us-east-1"
         }

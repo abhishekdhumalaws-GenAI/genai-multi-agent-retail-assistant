@@ -99,14 +99,14 @@ export const StreamingText: React.FC<StreamingTextProps> = ({
   );
 };
 
-// Demo component that shows how to use StreamingText
-export const StreamingDemo: React.FC = () => {
+// Production component that shows how to use StreamingText
+export const StreamingProd: React.FC = () => {
   const [message, setMessage] = useState("Hello! How can I help you today?");
   const [isStreaming, setIsStreaming] = useState(false);
   
   const handleClick = () => {
     setIsStreaming(true);
-    setMessage("This is a demonstration of character-by-character text streaming with a blinking cursor at the end. The cursor disappears when the text is fully displayed. This creates a much better user experience than showing static text all at once or having just a blinking cursor with no text appearing.");
+    setMessage("This is a production example of character-by-character text streaming with a blinking cursor at the end. The cursor disappears when the text is fully displayed. This creates a much better user experience than showing static text all at once or having just a blinking cursor with no text appearing.");
   };
   
   return (
@@ -137,10 +137,10 @@ export const StreamingDemo: React.FC = () => {
           cursor: isStreaming ? 'default' : 'pointer'
         }}
       >
-        {isStreaming ? 'Streaming...' : 'Start Demo'}
+        {isStreaming ? 'Streaming...' : 'Start Production Example'}
       </button>
     </div>
   );
 };
 
-export default StreamingDemo;
+export default StreamingProd;

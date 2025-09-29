@@ -1,6 +1,6 @@
 # Cognito User Creation
 
-To show demos on non-AWS employee machines, such as re:Invent kiosks, we can use an email and password to authenticate users through Amazon Cognito.
+To show production systems on non-AWS employee machines, such as re:Invent kiosks, we can use an email and password to authenticate users through Amazon Cognito.
 
 Follow these steps to create an Amazon Cognito user for dev, prod, or sandbox accounts:
 
