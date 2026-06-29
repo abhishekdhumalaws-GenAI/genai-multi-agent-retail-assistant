@@ -1,236 +1,129 @@
-# Multi Agent Orchestration (Customer Support Assistant)
+# GenAI Multi-Agent Retail Assistant on AWS
 
-## Overview  
-This project focuses on developing and implementing robust Multi Agent Orchestration capabilities for Amazon Bedrock Agents. The goal is to enhance the platform's ability to handle complex, real-world business scenarios that require coordinated efforts across specialized AI agents. Multiple agents will gather information from various datasources by using semantic search, and creating SQL queries from natural language to fetch data from databases.
+A production-style Generative AI retail assistant built using **Amazon Bedrock Agents**, **AWS Lambda**, **Amazon Athena**, **Amazon S3**, **AppSync**, and **AWS CDK**.
 
-### Key Objectives
+This project demonstrates a multi-agent orchestration system for mobile phone product discovery, recommendation, personalization, order management, and troubleshooting.
 
-- Develop a framework for efficient inter-agent communication
-- Implement task decomposition and delegation mechanisms
-- Ensure goal alignment across multiple agents
-- Address foundational issues such as latency reduction and stability improvements
-- Enhance usability to provide a solid base for Multi Agent Orchestration operations
+## Architecture Diagram
 
-## Use Case: Intelligent Customer Support
+```mermaid
+flowchart TD
+    User[User / Customer] --> Frontend[Frontend Application]
+    Frontend --> AppSync[AWS AppSync / API Layer]
+    AppSync --> Resolver[Streaming API Resolver Lambda]
 
-To showcase the capabilities of our Multi Agent Orchestration system, we've developed an intelligent customer support solution for a large retailer. This use case showcases how multiple specialized agents can collaborate to provide comprehensive, personalized support to customers.
+    Resolver --> Supervisor[Amazon Bedrock Supervisor Agent]
 
-### Agents Involved
-
-1. Supervisor Agent
-2. Order Management Agent
-3. Product Recommendation Agent
-4. Troubleshooting Agent
-5. Personalization Agent
-
-
-## Runtime Chatbot
-The runtime chatbot is a React-based website that uses a WebSocket API and a Lambda function architecture. The Lambda function uses the Amazon Bedrock Converse API to reason and retrieve relevant documents from the knowledge base, and uses action groups for text-2-sql querying against an Amazon Athena database. Then, the app provides the final answer to users inquiring about products, troubleshooting, or purchase recommendations.
-
-
-## Architecture Design
-![Diagram2](docs/kit/images/genai-mac-arch-diagram.png)
-
-
-1. The user accesses the web application through ***AWS WAF*** and ***Amazon CloudFront***, which delivers content from the Amazon S3 Website bucket, while Amazon Cognito handles authentication.
-
-2. After authentication, user requests are sent to ***AWS Amplify***, which serves as the entry point for all interactions. AWS Amplify validates the request and routes it to the appropriate ***AWS Lambda*** function for processing, maintaining a secure and scalable communication channel. ***Amazon DynamoDB*** is used to store session data. 
-
-3. The ***AWS Lambda*** function processes the incoming request and communicates with the Amazon Bedrock Supervisor Agent (Main). 
-
-4. The ***Amazon Bedrock*** Supervisor Agent (Main) analyzes the user query to determine intent and routes it to the appropriate sub agent. This central orchestrator maintains context across the conversation and ensures requests are handled by the most suitable sub agent.
-
-4a. For order-related queries, the Order Management Agent retrieves data from the order management database in ***Amazon Athena***, accessing orders and inventory tables through its ***Action Groups*** that execute SQL queries and format structured responses about order status, shipping details, and inventory availability.
-
-4b. When product recommendations are needed, this specialized agent accesses the product recommendation database in Athena while its Knowledge Base provides unstructured customer feedback data from S3, with Action Groups performing recommendation algorithms and formatting product suggestions with relevant details.
-
-4c. For technical issues, the Troubleshooting Agent accesses its Knowledge Base containing FAQs and Troubleshooting Guide document collections, using vector search capabilities to match customer issues with relevant troubleshooting content and retrieve step-by-step solutions without requiring Action Groups.
-
-4d. For personalization needs, the Personalization Agent accesses the personalization database in Athena, querying the customers preferences table through Action Groups that execute tailored SQL queries, perform preference analysis, and format responses. Its Knowledge Base contains browser history data from S3 that reveals actual customer behavior patterns, complementing the structured data to create a comprehensive view of individual customer profiles and past interactions.
-
-5. Sub agents construct and execute SQL queries against Amazon Athena which uses the AWS Glue Data Catalog to understand the schema and location of data, then queries the data directly in Amazon S3 without requiring data movement or transformation.
-
-6. After gathering necessary information from databases and knowledge bases, the sub agents generates a comprehensive response, which is then sent back through the Supervisor Agent to the Lambda function, AWS Amplify, and finally to the user's web interface.
-
-
-
-## Scope
-
-1. **Natural Language Inquiry Handling**  
-   The Customer Intake Agent captures the customer’s inquiry in natural language, interprets the intent, and routes it to the appropriate specialized agent (e.g., Order Management, Product Recommendation, or Troubleshooting).
-
-2. **Order Tracking and Management**  
-   The Order Management Agent retrieves real-time order details, including tracking information, and processes requests for returns or exchanges. This agent responds to the user’s questions about their orders, providing quick resolutions.
-
-3. **Personalized Product Recommendations**  
-   The Product Recommendation Agent analyzes customer purchase history, browsing patterns, and preferences to suggest relevant products tailored to the customer’s interests.
-
-4. **Technical Issue Resolution**  
-   The Troubleshooting Agent assists with diagnosing and resolving product-related issues by leveraging a knowledge base of common problems, troubleshooting guides, and customer support FAQs.
-
-5. **Persistent Customer Profile for Personalized Service**  
-   The Personalization Agent maintains and updates a customer profile, allowing it to recall previous interactions and provide personalized responses across multiple support sessions.
-
-6. **Dynamic Response and Tool Access**  
-   Agents dynamically select and access different tools and data sources, such as databases for order details, product catalogs, and survey data, ensuring comprehensive answers to customer inquiries.
-
-7. **Seamless Multi-Agent Coordination and Orchestration**  
-   The Orchestration Agent monitors agent progress, manages inter-agent communication, and ensures a seamless customer experience by coordinating the efforts of the Customer Intake, specialized, and Personalization agents.
-
-
-This scope showcases the Multi Agent Orchestration system's ability to deliver an efficient, personalized, and user-friendly customer support experience. The setup leverages Bedrock's orchestration and data-handling capabilities to deliver comprehensive and real-time support solutions.
-
-## Cost
-You are responsible for the cost of the AWS services used while running this Guidance. As of October 2024, the cost for running this Guidance with the default settings in the US West (Oregon) AWS Region is approximately $606.14 per month for processing 100,000 requests with an input/output token count average of 700K.
-
-We recommend creating a [Budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help manage costs. Prices are subject to change. For full details, refer to the pricing webpage for each AWS service used in this Guidance.
-
-| AWS Service                                           | Dimensions                                | Cost [USD]  |
-|-------------------------------------------------------|-------------------------------------------|-------------|
-| Amazon Cognito| Optimization Rate for Token Requests (0), Optimization Rate for App Clients (0), Number of monthly active users (MAU) (500), Advanced security features (Enabled)	| $25.00 |
-| AWS WAF	| Number of Web Access Control Lists (Web ACLs) utilized (1 per month), Number of Rules added per Web ACL (3 per month), Number of Rule Groups per Web ACL (2 per month), Number of Rules inside each Rule Group (2 per month)	| $14.00 |
-| Amazon CloudFront	| Data transfer out to internet (5 GB per month), Number of requests (HTTPS) (100000 per month), Data transfer out to origin (5 GB per month)	| $0.63 | 
-| AWS Amplify |	Duration of each request (in ms) (500), Number of build minutes (240 per day), Data stored per month (100 GB)	| $75.30 |
-| Amazon S3 | S3 Standard storage (10 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (1000), GET, SELECT, and all other requests from S3 Standard (1000) |	$0.24 |
-| AWS Lambda |	Architecture (x86), Architecture (x86), Invoke Mode (Buffered), Amount of ephemeral storage allocated (512 MB), Number of requests (1 million per month)	| $0.00 |
-| Amazon DynamoDB |	Table class (Standard), Average item size (all attributes) (100 KB), Data storage size (10 GB)	| $3.15 |
-| Amazon Bedrock (Agents) |	Average of 1,000 tokens input and 500 tokens output per invocation, Using Claude 3 Sonnet model (3/1Minputtokens,15/1M output tokens)	| |
-| Supervisor Agent |	2,500 invocations/month	| $26.25 |
-| Order Management Agent	| 1,000 invocations/month |	$10.50 |
-| Product Recommendation Agent |	750 invocations/month	| $7.88 |
-| Trouble Shooting Agent |	500 invocations/month	| $5.25 |
-| Personalization Agent |	250 invocations/month	| $2.63 |
-| Agent Builder Service Fee	| 5 agents × 0.0025perrequest×5,000requests	| $62.50 |
-| Amazon Bedrock Knowledge Bases |	4 knowledge bases, 3 GB data each, 2,500 queries per month |	$507.48 | 
-| Amazon Bedrock Action Groups	| Included in Bedrock Agent pricing |	$0 |
-| Amazon Athena	| Amount of data scanned per query (1 GB), Total number of queries (100 per day)	| $14.85 |
-| AWS Glue |	Number of DPUs for Apache Spark job (12), Number of DPUs for Python Shell job (0.0625) |	$5.28 |
-|Total| | $760.94 |
-
-
-### Model access
-
-Navigate to the Amazon Bedrock console, and enable the following models: 
-`Cohere Embed English V3`
-`Nova Pro`
-`Nova Lite`
-`Nova Micro`
-`Sonnet 3.5 V1`
-`Claude 3 Haiku`
-`Sonnet 3.5 V2`
-`Haiku 3.5 V1`
-
-![Diagram](docs/kit/images/model_access.png)
-
-## Pre-Requisites
-
-1. Install Docker
-2. Install Node with NPM
-3. Install aws-cli
-
----
-
-## Deployment
-
-```cd genai-projects/multi-agent
-   ./deploy.sh
-```
-After Deployment Choose Option 9 & Exit
-
-Run
-
-```./cognito-user.sh
-```
-To Create Application User.
-
-### Setup environment variables for Bedrock agents
-
-This application uses environment variables to manage Amazon Bedrock agent IDs securely, with values **dynamically exported from the CDK stack** during deployment. This approach eliminates hardcoded IDs in any source code or configuration files.
-
-#### For production deployments:
-The CDK stack automatically:
-1. Creates and configures the Bedrock agents
-2. Extracts the generated agent IDs and alias IDs
-3. Passes these as environment variables to the frontend build process
-4. Injects them into the application at build time
-
-#### For POC deployments:
-After deploying the CDK stack, we can set up the environment:
-
-
-### Project Config
-
-The project configuration requires you to enter in your account number. This is configured in the config/[project-config.json](/config/project-config.json) file.
-
-Edit the variables -
-
-```ts
-    "accounts": {
-        "dev": {
-            "number": "{ACCOUNT_NUMBER}",
-            "region": "us-east-1"
-        }
-    }
-```
-
-### Setup website using the Production kit
-
-```bash
-npm run develop
-```
-
-![cli-welcome](./docs/kit/images/cli-welcome.png)
-
-
-This starter kit includes ready-to-deploy, compliant and secure CDK and React app components with Cognito integration. It also includes customizable CLI tooling for easier production configuration and management. While we offer this set of components and tools, you retain the freedom to customize any and all aspects of the starter kit to fit your use case (even if it has nothing to do with GenAI).
-
-
-To deploy the stack, select the option - ***3. Deploy CDK Stack(s) 🚀***. Select environment, then yes, and let it deploy.
-
-
-### Amazon Athena
-- Before we run the app, we need to manually set the Amazon Athena output bucket (This will be automated on the next revision). In the AWS console, search for the Amazon Athena service, then navigate to the Athena management console. Validate that the ***Query your data with Trino SQL*** radio button is selected, then press ***Launch query editor***.
-![athena1](docs/kit/images/athena1.png)
-
-
-- Next, set the ***query result location*** with Amazon S3. Select the ***Settings*** tab, then the ***Manage*** button in the ***Query result location and encryption*** section.
-![athena2](docs/kit/images/athena2.png)
-
-
-- Add the S3 prefix below for the query results location, then select the ***Save*** button.
-
-![athena3](docs/kit/images/athena3.png)
-
-
-You are now ready to log into the application for testing.
-
-
-### Run webapp locally
-
-The local site is configured to run on port `3000`. So, ensure there are no other apps running on that port.
-
-Select the option ***7. Test Frontend Locally 💻***.
-
-Now, visit <http://localhost:3000> on a browser of choice (Chrome/Firefox are recommended)
-
-If you receive a blank screen, refresh the page.
-
-You also have a the cloudfront url created in the terminal to access the application.
-
-![athena3](docs/kit/images/ui_image.png)
-
-
----
-
-## Cleanup
-```bash
-npm run develop
-```
-Then select the option to destroy stack & coose all stacks.
-
-After deletion exit the kit.
-
-& Run
-```./cleanup.sh
-```
----
+    Supervisor --> ProductAgent[Product Recommendation Agent]
+    Supervisor --> PersonalizationAgent[Personalization Agent]
+    Supervisor --> OrderAgent[Order Management Agent]
+    Supervisor --> TroubleshootAgent[Troubleshooting Agent]
+
+    ProductAgent --> ActionLambda[Action Group Executor Lambda]
+    PersonalizationAgent --> ActionLambda
+    OrderAgent --> ActionLambda
+    TroubleshootAgent --> ActionLambda
+
+    ActionLambda --> Athena[Amazon Athena]
+    Athena --> S3[(Amazon S3 CSV Data Lake)]
+
+    TroubleshootAgent --> KB[Bedrock Knowledge Base]
+    KB --> Docs[(Product FAQ / Troubleshooting Docs)]
+
+    Resolver --> ChatStore[Conversation History / AppSync Persistence]
+    Resolver --> Frontend
+
+Business Problem
+
+Customers often struggle to compare mobile phones because product information, specifications, reviews, pricing, and availability are scattered across different sources.
+
+This GenAI assistant allows users to ask natural language questions such as:
+
+Which is the best Samsung phone under ₹60,000?
+Compare iPhone 16 and Samsung Galaxy S24 Ultra.
+Recommend a phone for gaming and battery life.
+Show my order status.
+Help troubleshoot battery drain issues.
+Key Features
+Multi-agent orchestration using Amazon Bedrock Agents
+Supervisor Agent for intent understanding and routing
+Specialized agents for recommendation, personalization, orders, and troubleshooting
+Athena-based structured product search
+S3-backed retail dataset
+Streaming response experience
+AWS Lambda action group execution
+Improved agent instructions to reduce hallucination
+Mobile phone retail dataset replacing sample demo data
+AWS Services Used
+Amazon Bedrock Agents
+AWS Lambda
+Amazon Athena
+Amazon S3
+AWS AppSync
+Amazon Cognito
+AWS CDK
+AWS CloudWatch
+IAM
+Knowledge Bases for Amazon Bedrock
+Agents
+Supervisor Agent
+
+The Supervisor Agent understands user intent and routes the request to the correct specialized agent.
+
+Product Recommendation Agent
+
+Handles product discovery, product comparison, budget-based recommendations, and feature-based phone suggestions.
+
+Personalization Agent
+
+Provides recommendations based on customer preferences, brand interest, budget, and purchase history.
+
+Order Management Agent
+
+Handles order status, shipping status, return status, and inventory-related queries.
+
+Troubleshooting Agent
+
+Answers product troubleshooting questions using FAQs and knowledge base content.
+
+Dataset Upgrade
+
+The original sample retail dataset was replaced with a realistic mobile phone dataset containing:
+
+Product catalog
+Purchase history
+Customer preferences
+Orders
+Inventory
+Reviews
+Offers
+Accessories
+Troubleshooting data
+Debugging Improvement
+
+During testing, the Recommendation Agent initially returned placeholder responses such as Product Name 1 and Nova 5G Smartphone.
+
+The issue was fixed by improving the agent instructions to:
+
+Always query Athena before recommending products
+Avoid placeholder product names
+Use actual product records from the dataset
+Support partial product matching using LIKE
+Ask clarification only when required
+Example Prompts
+Recommend best Samsung phone under 60000
+Compare iPhone 16 and Samsung Galaxy S24 Ultra
+Which phones are currently in stock?
+Show order status for o003
+Recommend a phone for customer cust009
+My Contributions
+Deployed the multi-agent application on AWS
+Replaced the sample dataset with mobile phone retail data
+Updated Bedrock Agent instructions
+Debugged hallucinated placeholder responses
+Validated Athena queries
+Tested end-to-end agent responses
+Published the customized implementation to GitHub
+Project Status
+
+Completed and tested successfully with the mobile phone dataset.
