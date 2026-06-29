@@ -37,7 +37,7 @@ enum Operations {
     REFRESH_ENV = "Refresh Local Environment 📦",
     TEST_FRONTEND = "Test Frontend Locally 💻",
     DESTROY_CDK = "Destroy CDK Stack(s) 🗑️",
-    EXIT = "Exit 👋",
+    EXIT = "Exit 👋 [ Remember to use add-user.sh to add user to the application. ]",
 }
 
 const synthesizeStacks = async (stage: string): Promise<void> => {

@@ -1,15 +1,101 @@
 product_id,product_name,category,quantity,in_stock,reorder_threshold,reorder_quantity,last_restock_date
-p001,zensound wireless headphones,headphones,150,yes,50,100,10/1/24
-p002,vitafit smartwatch,watch,75,yes,30,50,10/5/24
-p004,sonicwave bluetooth speaker,speaker,200,yes,70,100,9/25/24
-p006,soundsphere pro headphones,headphones,180,yes,60,100,9/20/24
-p007,trackmaster smartwatch,watch,40,yes,25,50,10/3/24
-p008,thunderbolt speaker,speaker,300,yes,100,150,9/15/24
-p003,promax laptop,computer,0,no,50,30,10/2/24
-p009,ultrabook pro laptop,computer,15,yes,8,20,10/6/24
-p010,gigabook gaming laptop,computer,0,no,5,15,9/29/24
-p011,flextab convertible laptop,computer,25,yes,10,20,10/4/24
-p005,nova 5g smartphone,phone,50,yes,20,30,10/8/24
-p012,alpha one 5g,phone,30,yes,15,25,10/10/24
-p013,eclipse x smartphone,phone,60,yes,25,40,10/3/24
-p014,infinity ultra 5g,phone,45,yes,20,30,9/28/24
+p001,apple iphone 17 pro max,smartphone,204,yes,75,50,2/17/26
+p002,apple iphone 17 pro,smartphone,244,yes,20,150,4/13/26
+p003,apple iphone 17,smartphone,163,yes,75,50,1/16/26
+p004,apple iphone air,smartphone,234,yes,20,150,3/11/26
+p005,apple iphone 17e,smartphone,168,yes,75,100,12/19/25
+p006,apple iphone 16 pro max,smartphone,386,yes,50,100,1/24/26
+p007,apple iphone 16 pro,smartphone,121,yes,75,150,3/8/26
+p008,apple iphone 16,smartphone,246,yes,50,50,5/5/26
+p009,apple iphone 16 plus,smartphone,268,yes,30,100,1/3/26
+p010,apple iphone 16e,smartphone,168,yes,75,100,3/18/26
+p011,apple iphone 15 pro max,smartphone,159,yes,50,100,1/18/26
+p012,apple iphone 15 pro,smartphone,88,yes,30,150,2/7/26
+p013,apple iphone 15,smartphone,276,yes,30,100,3/1/26
+p014,apple iphone 15 plus,smartphone,316,yes,75,50,12/3/25
+p015,apple iphone 14,smartphone,191,yes,30,50,5/13/26
+p016,apple iphone 14 plus,smartphone,265,yes,30,50,4/9/26
+p017,samsung galaxy s26 ultra,smartphone,181,yes,20,50,3/7/26
+p018,samsung galaxy s26+,smartphone,309,yes,30,50,3/7/26
+p019,samsung galaxy s26,smartphone,78,yes,50,50,2/27/26
+p020,samsung galaxy s25 ultra,smartphone,51,yes,20,50,1/12/26
+p021,samsung galaxy s25+,smartphone,361,yes,30,100,2/8/26
+p022,samsung galaxy s25,smartphone,67,yes,75,100,2/5/26
+p023,samsung galaxy s25 edge,smartphone,350,yes,30,50,12/17/25
+p024,samsung galaxy s24 ultra,smartphone,259,yes,50,150,5/25/26
+p025,samsung galaxy s24+,smartphone,273,yes,75,100,5/21/26
+p026,samsung galaxy s24,smartphone,348,yes,50,150,5/14/26
+p027,samsung galaxy z fold7,smartphone,57,yes,30,50,5/13/26
+p028,samsung galaxy z flip7,smartphone,326,yes,75,50,12/13/25
+p029,samsung galaxy a56 5g,smartphone,142,yes,20,50,1/9/26
+p030,samsung galaxy a36 5g,smartphone,98,yes,75,150,1/31/26
+p031,samsung galaxy m56 5g,smartphone,304,yes,75,100,3/3/26
+p032,samsung galaxy f56 5g,smartphone,68,yes,50,50,2/22/26
+p033,oneplus oneplus 15,smartphone,283,yes,30,150,2/7/26
+p034,oneplus oneplus 15r,smartphone,206,yes,50,150,1/1/26
+p035,oneplus oneplus 13,smartphone,27,yes,75,150,12/28/25
+p036,oneplus oneplus 13r,smartphone,85,yes,50,150,4/26/26
+p037,oneplus oneplus 12,smartphone,33,yes,75,50,1/12/26
+p038,oneplus oneplus 12r,smartphone,136,yes,20,150,1/31/26
+p039,oneplus oneplus nord 5,smartphone,291,yes,20,50,4/29/26
+p040,oneplus oneplus nord ce6,smartphone,96,yes,75,50,1/16/26
+p041,oneplus oneplus nord ce6 lite,smartphone,124,yes,30,100,5/17/26
+p042,oneplus oneplus open,smartphone,81,yes,30,150,5/31/26
+p043,google pixel 10 pro fold,smartphone,397,yes,30,50,12/16/25
+p044,google pixel 10 pro xl,smartphone,368,yes,75,100,1/24/26
+p045,google pixel 10 pro,smartphone,229,yes,50,150,3/21/26
+p046,google pixel 10,smartphone,345,yes,75,150,1/6/26
+p047,google pixel 10a,smartphone,158,yes,30,100,1/26/26
+p048,google pixel 9 pro fold,smartphone,180,yes,20,50,12/21/25
+p049,google pixel 9 pro xl,smartphone,195,yes,50,100,2/28/26
+p050,google pixel 9 pro,smartphone,244,yes,50,150,3/13/26
+p051,google pixel 9,smartphone,152,yes,75,100,1/5/26
+p052,google pixel 9a,smartphone,33,yes,50,150,12/29/25
+p053,xiaomi xiaomi 15 ultra,smartphone,328,yes,75,150,3/22/26
+p054,xiaomi xiaomi 15,smartphone,332,yes,75,50,3/12/26
+p055,xiaomi xiaomi 14 ultra,smartphone,36,yes,75,50,2/22/26
+p056,xiaomi xiaomi 14,smartphone,160,yes,30,150,5/8/26
+p057,xiaomi redmi note 14 pro+,smartphone,197,yes,20,50,2/17/26
+p058,xiaomi redmi note 14 pro,smartphone,268,yes,20,50,2/19/26
+p059,xiaomi redmi note 14,smartphone,177,yes,20,50,4/29/26
+p060,xiaomi poco f7 pro,smartphone,344,yes,30,50,4/6/26
+p061,xiaomi poco x7 pro,smartphone,94,yes,30,50,5/9/26
+p062,xiaomi poco m7 pro,smartphone,233,yes,30,150,1/13/26
+p063,vivo vivo x200 pro,smartphone,371,yes,30,150,12/13/25
+p064,vivo vivo x200,smartphone,301,yes,20,50,4/2/26
+p065,vivo vivo v50 pro,smartphone,389,yes,75,150,2/20/26
+p066,vivo vivo v50,smartphone,54,yes,30,100,2/15/26
+p067,vivo vivo t4 ultra,smartphone,140,yes,30,150,4/9/26
+p068,vivo vivo t4 5g,smartphone,235,yes,20,150,3/11/26
+p069,vivo vivo y300 5g,smartphone,146,yes,30,150,5/25/26
+p070,vivo vivo y200 5g,smartphone,381,yes,20,150,2/4/26
+p071,oppo oppo find x8 pro,smartphone,311,yes,30,100,3/14/26
+p072,oppo oppo find x8,smartphone,154,yes,20,150,5/29/26
+p073,oppo oppo reno 13 pro,smartphone,217,yes,50,50,3/2/26
+p074,oppo oppo reno 13,smartphone,124,yes,20,100,5/7/26
+p075,oppo oppo f29 pro,smartphone,242,yes,20,100,1/2/26
+p076,oppo oppo f29,smartphone,83,yes,75,150,1/31/26
+p077,oppo oppo a5 pro 5g,smartphone,295,yes,50,50,5/14/26
+p078,oppo oppo a3x 5g,smartphone,92,yes,30,50,2/4/26
+p079,realme realme gt 7 pro,smartphone,136,yes,75,150,4/21/26
+p080,realme realme gt 7,smartphone,129,yes,75,150,4/20/26
+p081,realme realme gt 6,smartphone,107,yes,30,100,3/26/26
+p082,realme realme 14 pro+,smartphone,292,yes,20,50,5/2/26
+p083,realme realme 14 pro,smartphone,293,yes,20,50,2/3/26
+p084,realme realme p3 pro,smartphone,399,yes,30,50,1/22/26
+p085,realme realme narzo 80 pro,smartphone,387,yes,50,100,12/9/25
+p086,realme realme c75 5g,smartphone,250,yes,50,50,5/22/26
+p087,motorola motorola edge 60 ultra,smartphone,384,yes,30,150,2/20/26
+p088,motorola motorola edge 60 pro,smartphone,254,yes,75,150,1/3/26
+p089,motorola motorola edge 60,smartphone,321,yes,30,50,12/8/25
+p090,motorola motorola razr 60 ultra,smartphone,95,yes,30,150,5/13/26
+p091,motorola motorola razr 60,smartphone,234,yes,75,50,3/25/26
+p092,motorola moto g86 5g,smartphone,305,yes,75,50,4/30/26
+p093,motorola moto g85 5g,smartphone,145,yes,30,100,12/13/25
+p094,motorola moto g64 5g,smartphone,55,yes,75,50,1/2/26
+p095,nothing nothing phone (3),smartphone,288,yes,50,100,3/28/26
+p096,nothing nothing phone (3a) pro,smartphone,161,yes,20,100,2/20/26
+p097,nothing nothing phone (3a),smartphone,362,yes,75,50,3/12/26
+p098,nothing nothing phone (2a) plus,smartphone,274,yes,75,50,1/2/26
+p099,nothing nothing phone (2a),smartphone,305,yes,75,100,4/12/26
+p100,nothing cmf phone 2 pro,smartphone,131,yes,30,50,12/16/25

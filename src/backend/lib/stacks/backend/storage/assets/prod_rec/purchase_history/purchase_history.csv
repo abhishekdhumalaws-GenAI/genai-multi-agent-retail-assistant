@@ -1,67 +1,251 @@
 ﻿customer_id,product_id,purchase_date,quantity,purchase_amount,payment_method
-cust001,p001,10/15/23,1,450,credit card
-cust002,p002,8/20/23,3,75,paypal
-cust003,p003,9/5/23,2,300,debit card
-cust004,p003,7/22/23,5,125,credit card
-cust005,p004,11/1/23,1,200,paypal
-cust001,p002,6/15/23,4,320,credit card
-cust002,p001,9/1/23,2,100,debit card
-cust003,p004,10/1/23,1,250,paypal
-cust004,p005,8/10/23,3,450,gift card
-cust005,p002,7/25/23,5,175,debit card
-cust001,p003,11/5/23,2,330,credit card
-cust002,p004,7/15/23,1,80,paypal
-cust003,p001,9/15/23,2,190,credit card
-cust004,p002,10/20/23,3,75,gift card
-cust005,p005,8/15/23,4,500,debit card
-cust001,p004,9/20/23,3,225,paypal
-cust006,p006,10/10/23,2,260,credit card
-cust007,p007,11/11/23,1,230,debit card
-cust008,p008,9/12/23,3,270,gift card
-cust009,p009,10/25/23,1,1100,paypal
-cust010,p010,8/18/23,2,3000,credit card
-cust011,p011,9/29/23,1,800,debit card
-cust012,p012,11/2/23,1,750,gift card
-cust013,p013,7/21/23,2,1300,credit card
-cust014,p014,10/15/23,3,2550,paypal
-cust015,p005,9/10/23,1,800,debit card
-cust001,p010,10/3/23,1,1500,credit card
-cust002,p012,9/22/23,1,750,paypal
-cust003,p013,10/8/23,2,1300,gift card
-cust004,p006,11/6/23,1,130,debit card
-cust005,p008,9/20/23,2,180,credit card
-cust001,p001,11/10/23,2,300,credit card
-cust001,p002,10/22/23,1,250,paypal
-cust001,p003,11/1/23,1,1200,debit card
-cust001,p009,10/30/23,1,1100,gift card
-cust001,p013,11/5/23,1,650,credit card
-cust002,p010,10/15/23,1,1500,paypal
-cust002,p011,11/8/23,1,800,debit card
-cust003,p005,10/19/23,2,1600,credit card
-cust003,p012,11/7/23,1,750,gift card
-cust004,p014,11/2/23,1,850,paypal
-cust004,p007,10/12/23,2,460,debit card
-cust005,p008,11/6/23,1,90,gift card
-cust006,p005,11/9/23,1,800,credit card
-cust007,p003,10/20/23,2,2400,paypal
-cust001,p006,11/11/23,3,390,debit card
-cust007,p001,10/5/23,1,150,credit card
-cust007,p014,11/10/23,2,1700,paypal
-cust008,p003,9/18/23,1,1200,debit card
-cust008,p002,10/21/23,3,750,gift card
-cust009,p009,10/15/23,1,1100,credit card
-cust009,p008,11/1/23,2,180,debit card
-cust010,p006,9/20/23,1,130,paypal
-cust010,p005,11/2/23,1,800,credit card
-cust011,p007,10/12/23,3,690,debit card
-cust011,p010,11/5/23,1,1500,gift card
-cust012,p012,10/18/23,1,750,paypal
-cust012,p013,11/3/23,2,1300,credit card
-cust013,p004,9/25/23,1,100,debit card
-cust013,p005,10/30/23,2,1600,paypal
-cust014,p011,11/7/23,1,800,gift card
-cust014,p003,9/10/23,2,2400,credit card
-cust015,p002,10/3/23,4,1000,debit card
-cust015,p006,11/6/23,2,260,paypal
-cust016,p010,10/25/23,1,1500,credit card
-cust016,p014,11/9/23,1,850,debit card
+cust071,p100,9/25/25,2,61000,debit card
+cust081,p092,9/13/25,2,22000,debit card
+cust091,p014,6/11/26,1,88000,emi
+cust021,p027,2/14/26,2,185000,net banking
+cust059,p052,9/13/25,2,81000,wallet
+cust100,p096,1/9/26,2,61000,upi
+cust062,p067,5/1/25,1,46500,emi
+cust063,p034,8/22/25,1,49500,net banking
+cust021,p024,2/13/26,1,97000,debit card
+cust053,p067,9/7/25,1,46500,upi
+cust001,p024,4/1/26,1,97000,credit card
+cust031,p025,5/26/25,1,63500,credit card
+cust075,p060,4/18/26,1,33000,wallet
+cust024,p080,2/27/25,1,20000,debit card
+cust098,p062,6/18/25,2,78000,upi
+cust100,p040,4/3/26,2,106000,emi
+cust097,p053,2/10/25,1,48500,wallet
+cust087,p023,3/18/25,1,34500,debit card
+cust046,p067,10/11/25,1,46500,upi
+cust013,p086,2/23/25,2,30000,wallet
+cust046,p074,2/16/26,1,23000,emi
+cust092,p064,8/24/25,1,25000,debit card
+cust062,p017,1/28/26,2,184000,upi
+cust005,p052,6/13/26,1,40500,wallet
+cust045,p024,11/23/25,1,97000,credit card
+cust072,p099,1/8/25,1,20000,wallet
+cust003,p026,2/13/26,1,33000,debit card
+cust085,p064,6/11/26,2,50000,wallet
+cust054,p054,6/18/25,2,30000,emi
+cust053,p033,1/21/26,1,52000,emi
+cust098,p025,11/14/25,1,63500,net banking
+cust062,p019,5/11/25,1,39000,debit card
+cust090,p067,6/8/25,1,46500,credit card
+cust011,p078,10/29/25,1,23000,debit card
+cust056,p008,11/5/25,1,64500,credit card
+cust021,p084,4/30/26,1,27500,credit card
+cust038,p083,12/28/25,1,26500,debit card
+cust090,p022,4/13/26,1,35500,emi
+cust037,p012,1/7/26,1,87500,debit card
+cust086,p064,12/2/25,1,25000,credit card
+cust071,p005,3/9/25,2,130000,upi
+cust051,p064,6/23/25,1,25000,emi
+cust064,p063,11/18/25,1,35500,upi
+cust048,p031,2/2/25,1,39000,wallet
+cust044,p062,10/19/25,1,39000,debit card
+cust051,p027,3/25/26,1,92500,credit card
+cust077,p013,6/14/26,1,65500,debit card
+cust064,p049,9/26/25,2,178000,upi
+cust053,p075,11/5/25,2,72000,debit card
+cust036,p042,12/3/25,2,107000,upi
+cust060,p087,6/13/25,1,41500,wallet
+cust054,p021,3/24/26,1,72000,emi
+cust027,p056,5/26/26,1,16000,credit card
+cust093,p051,1/6/26,2,106000,wallet
+cust024,p024,9/24/25,1,97000,upi
+cust037,p046,9/6/25,1,57500,net banking
+cust050,p059,4/13/25,1,18000,debit card
+cust078,p093,4/18/26,1,15500,net banking
+cust092,p019,12/3/25,1,39000,emi
+cust096,p051,9/7/25,1,53000,credit card
+cust070,p071,7/1/25,1,32500,upi
+cust032,p050,3/14/25,1,76500,net banking
+cust009,p091,2/22/25,2,24000,credit card
+cust016,p012,3/6/25,1,87500,wallet
+cust078,p078,4/12/25,1,23000,net banking
+cust054,p050,1/23/26,1,76500,upi
+cust025,p016,1/26/25,2,180000,wallet
+cust077,p065,4/14/26,1,36000,debit card
+cust012,p026,11/27/25,1,33000,upi
+cust055,p071,1/5/25,1,32500,wallet
+cust011,p094,3/6/26,2,35000,wallet
+cust067,p044,10/14/25,1,90000,credit card
+cust019,p074,11/7/25,1,23000,emi
+cust031,p097,3/10/25,1,20500,credit card
+cust024,p074,5/4/26,1,23000,emi
+cust054,p025,1/17/25,2,127000,debit card
+cust060,p034,5/5/25,1,49500,net banking
+cust046,p069,2/11/25,1,27500,debit card
+cust003,p002,9/30/25,1,84500,net banking
+cust019,p046,4/30/26,1,57500,emi
+cust090,p009,2/21/25,2,180000,wallet
+cust080,p057,6/14/26,1,35000,emi
+cust037,p008,5/31/25,1,64500,emi
+cust058,p026,6/5/26,1,33000,credit card
+cust036,p004,5/16/26,1,46500,credit card
+cust085,p038,11/14/25,1,55500,emi
+cust091,p067,12/8/25,1,46500,emi
+cust033,p038,5/30/26,1,55500,net banking
+cust009,p011,11/17/25,1,111500,credit card
+cust075,p005,11/29/25,2,130000,net banking
+cust082,p021,9/21/25,1,72000,upi
+cust067,p072,8/9/25,1,29500,upi
+cust067,p072,4/3/25,1,29500,upi
+cust063,p062,1/2/25,2,78000,emi
+cust069,p059,3/13/26,1,18000,wallet
+cust043,p028,3/28/25,1,35000,emi
+cust080,p050,11/28/25,2,153000,wallet
+cust014,p039,9/11/25,1,51000,net banking
+cust005,p041,3/2/25,1,48000,upi
+cust025,p092,6/12/26,1,11000,emi
+cust012,p062,3/29/26,2,78000,upi
+cust080,p005,2/6/25,1,65000,net banking
+cust014,p063,11/24/25,1,35500,upi
+cust063,p005,12/10/25,2,130000,net banking
+cust029,p037,3/9/25,1,47000,wallet
+cust035,p072,2/5/25,1,29500,debit card
+cust078,p050,3/5/25,1,76500,wallet
+cust093,p006,12/6/25,1,111000,debit card
+cust016,p063,9/15/25,1,35500,wallet
+cust044,p091,6/1/26,1,12000,debit card
+cust022,p017,11/23/25,1,92000,wallet
+cust076,p002,4/3/25,1,84500,wallet
+cust056,p018,1/5/26,1,68500,credit card
+cust029,p069,8/17/25,1,27500,credit card
+cust020,p055,1/6/26,1,52000,debit card
+cust080,p050,8/25/25,1,76500,wallet
+cust068,p072,1/26/26,2,59000,wallet
+cust014,p011,3/27/26,1,111500,upi
+cust073,p008,3/15/26,2,129000,credit card
+cust025,p042,5/18/26,1,53500,credit card
+cust034,p016,2/19/26,1,90000,upi
+cust051,p083,5/7/25,2,53000,debit card
+cust069,p025,4/25/26,1,63500,wallet
+cust010,p078,3/8/26,1,23000,net banking
+cust001,p057,5/25/26,1,35000,credit card
+cust046,p039,5/16/25,2,102000,debit card
+cust004,p014,3/28/25,1,88000,wallet
+cust086,p025,8/25/25,1,63500,credit card
+cust087,p098,2/8/26,1,31500,upi
+cust069,p094,6/3/26,2,35000,credit card
+cust094,p084,1/25/25,1,27500,debit card
+cust018,p069,10/9/25,1,27500,emi
+cust031,p034,4/19/25,1,49500,emi
+cust022,p100,3/17/26,2,61000,emi
+cust091,p081,12/22/25,2,36000,net banking
+cust028,p040,3/29/26,1,53000,wallet
+cust092,p021,7/11/25,2,144000,emi
+cust063,p005,5/17/26,1,65000,debit card
+cust027,p027,4/1/26,1,92500,upi
+cust057,p068,11/16/25,1,25000,wallet
+cust067,p014,8/3/25,1,88000,emi
+cust003,p044,6/2/26,2,180000,upi
+cust007,p038,3/16/26,2,111000,wallet
+cust054,p062,1/20/26,1,39000,credit card
+cust012,p022,3/7/25,2,71000,debit card
+cust034,p005,5/18/26,1,65000,upi
+cust098,p032,2/12/26,1,32000,net banking
+cust075,p010,2/11/25,1,68500,wallet
+cust067,p071,6/10/25,1,32500,wallet
+cust006,p080,6/5/25,1,20000,credit card
+cust058,p005,2/3/26,2,130000,debit card
+cust078,p029,1/22/26,2,77000,upi
+cust079,p100,1/7/26,1,30500,credit card
+cust075,p060,9/6/25,2,66000,upi
+cust020,p047,1/25/26,2,76000,emi
+cust034,p040,6/1/26,2,106000,emi
+cust031,p082,4/16/26,2,52000,debit card
+cust079,p006,4/14/26,2,222000,upi
+cust068,p064,1/14/25,1,25000,debit card
+cust056,p044,1/13/26,1,90000,wallet
+cust024,p053,5/10/26,1,48500,emi
+cust062,p089,9/24/25,2,36000,emi
+cust047,p067,12/7/25,2,93000,wallet
+cust091,p093,5/28/25,2,31000,wallet
+cust038,p064,5/24/26,1,25000,net banking
+cust063,p051,3/2/26,1,53000,emi
+cust002,p082,5/30/25,1,26000,emi
+cust011,p099,4/27/25,1,20000,credit card
+cust057,p094,5/25/26,1,17500,net banking
+cust016,p099,9/14/25,1,20000,net banking
+cust040,p046,1/15/25,1,57500,credit card
+cust097,p064,6/25/26,1,25000,wallet
+cust082,p066,3/22/26,1,26000,debit card
+cust046,p002,1/8/25,1,84500,net banking
+cust001,p075,3/5/25,2,72000,net banking
+cust067,p066,5/6/26,2,52000,emi
+cust084,p070,11/27/25,1,28000,debit card
+cust043,p075,1/28/26,2,72000,debit card
+cust062,p011,5/3/25,1,111500,wallet
+cust038,p088,4/23/25,1,29000,credit card
+cust040,p062,2/15/26,1,39000,debit card
+cust084,p057,4/5/26,1,35000,credit card
+cust011,p019,4/25/25,1,39000,debit card
+cust011,p007,3/7/26,1,85500,debit card
+cust034,p076,7/1/25,1,24000,net banking
+cust020,p045,6/16/26,2,146000,wallet
+cust081,p100,3/26/25,1,30500,credit card
+cust075,p048,4/28/25,1,101000,net banking
+cust070,p046,4/5/25,1,57500,net banking
+cust092,p059,1/13/26,2,36000,debit card
+cust078,p025,7/10/25,1,63500,wallet
+cust030,p061,3/29/25,1,35500,upi
+cust091,p053,3/6/26,1,48500,debit card
+cust077,p067,8/31/25,1,46500,emi
+cust053,p047,11/29/25,2,76000,upi
+cust088,p006,9/23/25,2,222000,credit card
+cust031,p029,5/16/26,1,38500,net banking
+cust004,p068,2/23/25,1,25000,debit card
+cust055,p009,7/2/25,1,90000,debit card
+cust053,p054,12/3/25,1,15000,credit card
+cust029,p007,8/5/25,1,85500,net banking
+cust028,p048,4/9/26,1,101000,wallet
+cust013,p065,3/17/25,2,72000,wallet
+cust091,p044,10/24/25,1,90000,credit card
+cust028,p086,7/10/25,1,15000,net banking
+cust026,p030,2/28/26,1,32000,net banking
+cust050,p008,4/21/26,1,64500,credit card
+cust056,p054,5/24/26,1,15000,debit card
+cust070,p082,6/17/25,1,26000,emi
+cust068,p089,5/31/25,1,18000,upi
+cust026,p069,4/6/25,2,55000,wallet
+cust026,p065,5/12/25,1,36000,upi
+cust091,p083,5/30/25,1,26500,emi
+cust098,p081,2/18/26,1,18000,credit card
+cust025,p026,7/14/25,1,33000,credit card
+cust051,p096,5/14/26,1,30500,emi
+cust081,p023,8/17/25,1,34500,upi
+cust040,p045,9/25/25,1,73000,net banking
+cust005,p062,4/8/25,1,39000,debit card
+cust081,p051,5/28/25,2,106000,wallet
+cust097,p058,1/29/25,2,77000,emi
+cust072,p050,2/27/25,1,76500,wallet
+cust046,p045,2/1/26,1,73000,emi
+cust016,p066,2/19/25,2,52000,wallet
+cust042,p059,4/29/26,1,18000,upi
+cust003,p062,1/26/26,1,39000,credit card
+cust012,p004,10/17/25,1,46500,wallet
+cust051,p063,10/20/25,1,35500,emi
+cust041,p086,11/23/25,1,15000,wallet
+cust099,p086,7/4/25,1,15000,net banking
+cust058,p008,7/31/25,1,64500,net banking
+cust065,p073,3/21/25,2,74000,emi
+cust046,p097,6/13/26,2,41000,emi
+cust022,p016,11/23/25,2,180000,upi
+cust017,p021,1/9/26,1,72000,net banking
+cust048,p041,3/21/26,1,48000,upi
+cust079,p077,6/8/25,1,31500,credit card
+cust061,p055,11/17/25,1,52000,emi
+cust058,p080,5/15/25,1,20000,debit card
+cust015,p003,3/15/25,1,65500,credit card
+cust017,p064,5/15/26,2,50000,credit card
+cust001,p049,3/6/26,1,89000,upi
+cust065,p067,8/25/25,1,46500,wallet
+cust003,p064,4/7/26,1,25000,credit card
+cust009,p041,8/27/25,2,96000,wallet
+cust034,p011,1/30/26,1,111500,credit card
+cust001,p016,1/16/25,1,90000,debit card
+cust067,p052,12/3/25,1,40500,credit card
+cust096,p072,2/13/26,1,29500,credit card
+cust017,p042,5/10/25,1,53500,emi

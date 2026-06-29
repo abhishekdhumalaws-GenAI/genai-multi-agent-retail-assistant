@@ -1,15 +1,101 @@
 ﻿product_id,product_name,category,price,description,rating,popularity
-p001,zensound wireless headphones,headphones,150,"1) noise-canceling 2) bluetooth enabled",4.5,high
-p002,vitafit smartwatch,watch,250,"1.) fitness tracking 2.) waterproof",4.6,high
-p004,sonicwave bluetooth speaker,speaker,100,"1.) portable 2.) long battery life",4.2,medium
-p006,soundsphere pro headphones,headphones,130,"1.) immersive sound 2.) over-ear 3.) noise-canceling",4.4,medium
-p007,trackmaster smartwatch,watch,230,"1.) heart rate monitor 2.) gps tracking",4.3,medium
-p008,thunderbolt speaker,speaker,90,"1.) compact 2.) waterproof 2.) bass boost",4.1,medium
-p003,promax laptop,computer,1200,"1.) high-performance 2.) 16gb ram 3.) 512gb ssd",4.4,high
-p009,ultrabook pro laptop,computer,1100,"1.) lightweight 2.) 8gb ram 3.) 256gb ssd",4.3,high
-p010,gigabook gaming laptop,computer,1500,"1.) high-end gpu 2.) 32gb ram 3.) 1tb ssd",4.7,high
-p011,flextab convertible laptop,computer,800,"1.) 2-in-1 touchscreen 2.) 16gb ram 3.) 512gb ssd",4.5,medium
-p005,nova 5g smartphone,phone,800,"1.) latest model 2.) 5g enabled",4.7,high
-p012,alpha one 5g,phones,750,"1.) ai-enhanced camera 2.) 128gb storage",4.6,high
-p013,eclipse x smartphone,phones,650,"1.) edge-to-edge display 2.) dual sim",4.4,medium
-p014,infinity ultra 5g,phone,850,"1.) 6.7-inch display 2.) long battery life",4.6,high
+p001,apple iphone 17 pro max,smartphone,111500,1) flagship processor 2) advanced camera system 2) bright AMOLED display 2) long battery life 2) 5G connectivity,4.2,low
+p002,apple iphone 17 pro,smartphone,84500,1) flagship processor 2) advanced camera system 2) 5G connectivity 2) AI photo editing 2) fast charging,4.8,medium
+p003,apple iphone 17,smartphone,65500,1) flagship processor 2) advanced camera system 2) water resistance 2) AI photo editing 2) 5G connectivity,4.3,high
+p004,apple iphone air,smartphone,46500,1) flagship processor 2) advanced camera system 2) 5G connectivity 2) AI photo editing 2) fast charging,4.2,medium
+p005,apple iphone 17e,smartphone,65000,1) flagship processor 2) advanced camera system 2) gaming optimized 2) AI photo editing 2) 5G connectivity 2) fast charging,4.1,high
+p006,apple iphone 16 pro max,smartphone,111000,1) flagship processor 2) advanced camera system 2) long battery life 2) fast charging 2) premium design,4.7,high
+p007,apple iphone 16 pro,smartphone,85500,1) flagship processor 2) advanced camera system 2) premium design 2) AI photo editing 2) fast charging,4.2,high
+p008,apple iphone 16,smartphone,64500,1) flagship processor 2) advanced camera system 2) long battery life 2) bright AMOLED display 2) AI photo editing,4.3,medium
+p009,apple iphone 16 plus,smartphone,90000,1) flagship processor 2) advanced camera system 2) AI photo editing 2) fast charging 2) premium design,4.4,high
+p010,apple iphone 16e,smartphone,68500,1) flagship processor 2) advanced camera system 2) 5G connectivity 2) fast charging 2) AI photo editing,4.7,medium
+p011,apple iphone 15 pro max,smartphone,111500,1) flagship processor 2) advanced camera system 2) long battery life 2) water resistance 2) bright AMOLED display,4.7,medium
+p012,apple iphone 15 pro,smartphone,87500,1) flagship processor 2) advanced camera system 2) gaming optimized 2) bright AMOLED display 2) fast charging 2) premium design,4.3,medium
+p013,apple iphone 15,smartphone,65500,1) flagship processor 2) advanced camera system 2) water resistance 2) 5G connectivity 2) premium design,4.2,high
+p014,apple iphone 15 plus,smartphone,88000,1) flagship processor 2) advanced camera system 2) bright AMOLED display 2) premium design 2) long battery life,4.8,medium
+p015,apple iphone 14,smartphone,62500,1) flagship processor 2) advanced camera system 2) gaming optimized 2) 5G connectivity 2) premium design 2) fast charging,4.5,medium
+p016,apple iphone 14 plus,smartphone,90000,1) flagship processor 2) advanced camera system 2) water resistance 2) long battery life 2) fast charging,4.4,low
+p017,samsung galaxy s26 ultra,smartphone,92000,1) flagship processor 2) advanced camera system 2) gaming optimized 2) premium design 2) fast charging 2) AI photo editing,4.7,high
+p018,samsung galaxy s26+,smartphone,68500,1) gaming optimized 2) fast charging 2) long battery life 2) premium design,4.4,medium
+p019,samsung galaxy s26,smartphone,39000,1) long battery life 2) water resistance 2) 5G connectivity,4.2,medium
+p020,samsung galaxy s25 ultra,smartphone,93000,1) flagship processor 2) advanced camera system 2) premium design 2) long battery life 2) 5G connectivity,4.2,medium
+p021,samsung galaxy s25+,smartphone,72000,1) AI photo editing 2) premium design 2) fast charging,4.7,medium
+p022,samsung galaxy s25,smartphone,35500,1) gaming optimized 2) fast charging 2) bright AMOLED display 2) premium design,4.7,high
+p023,samsung galaxy s25 edge,smartphone,34500,1) bright AMOLED display 2) fast charging 2) long battery life,4.8,high
+p024,samsung galaxy s24 ultra,smartphone,97000,1) flagship processor 2) advanced camera system 2) gaming optimized 2) AI photo editing 2) long battery life 2) fast charging,4.6,low
+p025,samsung galaxy s24+,smartphone,63500,1) premium design 2) 5G connectivity 2) bright AMOLED display,4.7,medium
+p026,samsung galaxy s24,smartphone,33000,1) bright AMOLED display 2) long battery life 2) water resistance,4.3,medium
+p027,samsung galaxy z fold7,smartphone,92500,1) flagship processor 2) advanced camera system 2) foldable display 2) AI photo editing 2) premium design 2) 5G connectivity,4.3,medium
+p028,samsung galaxy z flip7,smartphone,35000,1) gaming optimized 2) premium design 2) bright AMOLED display 2) fast charging,4.4,medium
+p029,samsung galaxy a56 5g,smartphone,38500,1) gaming optimized 2) bright AMOLED display 2) premium design 2) water resistance,4.3,medium
+p030,samsung galaxy a36 5g,smartphone,32000,1) gaming optimized 2) water resistance 2) 5G connectivity 2) bright AMOLED display,4.6,medium
+p031,samsung galaxy m56 5g,smartphone,39000,1) bright AMOLED display 2) water resistance 2) AI photo editing,4.3,high
+p032,samsung galaxy f56 5g,smartphone,32000,1) AI photo editing 2) fast charging 2) premium design,4.2,medium
+p033,oneplus oneplus 15,smartphone,52000,1) flagship processor 2) advanced camera system 2) bright AMOLED display 2) AI photo editing 2) long battery life,4.7,high
+p034,oneplus oneplus 15r,smartphone,49500,1) flagship processor 2) advanced camera system 2) fast charging 2) AI photo editing 2) premium design,4.7,medium
+p035,oneplus oneplus 13,smartphone,50000,1) flagship processor 2) advanced camera system 2) premium design 2) water resistance 2) bright AMOLED display,4.6,medium
+p036,oneplus oneplus 13r,smartphone,48000,1) flagship processor 2) advanced camera system 2) 5G connectivity 2) premium design 2) fast charging,4.7,medium
+p037,oneplus oneplus 12,smartphone,47000,1) flagship processor 2) advanced camera system 2) water resistance 2) bright AMOLED display 2) premium design,4.8,medium
+p038,oneplus oneplus 12r,smartphone,55500,1) flagship processor 2) advanced camera system 2) gaming optimized 2) long battery life 2) AI photo editing 2) bright AMOLED display,4.3,high
+p039,oneplus oneplus nord 5,smartphone,51000,1) premium design 2) bright AMOLED display 2) long battery life,4.7,medium
+p040,oneplus oneplus nord ce6,smartphone,53000,1) fast charging 2) bright AMOLED display 2) premium design,4.1,medium
+p041,oneplus oneplus nord ce6 lite,smartphone,48000,1) gaming optimized 2) 5G connectivity 2) fast charging 2) bright AMOLED display,4.3,medium
+p042,oneplus oneplus open,smartphone,53500,1) flagship processor 2) advanced camera system 2) long battery life 2) AI photo editing 2) fast charging,4.3,medium
+p043,google pixel 10 pro fold,smartphone,100500,1) flagship processor 2) advanced camera system 2) foldable display 2) gaming optimized 2) long battery life 2) water resistance 2) AI photo editing,4.2,high
+p044,google pixel 10 pro xl,smartphone,90000,1) flagship processor 2) advanced camera system 2) bright AMOLED display 2) long battery life 2) AI photo editing,4.6,medium
+p045,google pixel 10 pro,smartphone,73000,1) flagship processor 2) advanced camera system 2) long battery life 2) AI photo editing 2) bright AMOLED display,4.5,high
+p046,google pixel 10,smartphone,57500,1) flagship processor 2) advanced camera system 2) fast charging 2) premium design 2) bright AMOLED display,4.6,medium
+p047,google pixel 10a,smartphone,38000,1) bright AMOLED display 2) fast charging 2) long battery life,4.5,medium
+p048,google pixel 9 pro fold,smartphone,101000,1) flagship processor 2) advanced camera system 2) foldable display 2) gaming optimized 2) AI photo editing 2) premium design 2) water resistance,4.7,high
+p049,google pixel 9 pro xl,smartphone,89000,1) flagship processor 2) advanced camera system 2) long battery life 2) bright AMOLED display 2) premium design,4.1,medium
+p050,google pixel 9 pro,smartphone,76500,1) flagship processor 2) advanced camera system 2) 5G connectivity 2) AI photo editing 2) fast charging,4.5,medium
+p051,google pixel 9,smartphone,53000,1) flagship processor 2) advanced camera system 2) water resistance 2) 5G connectivity 2) premium design,4.3,medium
+p052,google pixel 9a,smartphone,40500,1) gaming optimized 2) water resistance 2) fast charging 2) long battery life,4.5,medium
+p053,xiaomi xiaomi 15 ultra,smartphone,48500,1) flagship processor 2) advanced camera system 2) long battery life 2) fast charging 2) premium design,4.4,high
+p054,xiaomi xiaomi 15,smartphone,15000,1) long battery life 2) 5G connectivity 2) premium design,4.3,high
+p055,xiaomi xiaomi 14 ultra,smartphone,52000,1) flagship processor 2) advanced camera system 2) bright AMOLED display 2) water resistance 2) fast charging,4.6,medium
+p056,xiaomi xiaomi 14,smartphone,16000,1) water resistance 2) long battery life 2) 5G connectivity,4.4,medium
+p057,xiaomi redmi note 14 pro+,smartphone,35000,1) flagship processor 2) advanced camera system 2) gaming optimized 2) water resistance 2) premium design 2) AI photo editing,4.6,high
+p058,xiaomi redmi note 14 pro,smartphone,38500,1) flagship processor 2) advanced camera system 2) water resistance 2) fast charging 2) premium design,4.7,medium
+p059,xiaomi redmi note 14,smartphone,18000,1) bright AMOLED display 2) premium design 2) AI photo editing,4.7,medium
+p060,xiaomi poco f7 pro,smartphone,33000,1) flagship processor 2) advanced camera system 2) long battery life 2) AI photo editing 2) water resistance,4.7,medium
+p061,xiaomi poco x7 pro,smartphone,35500,1) flagship processor 2) advanced camera system 2) water resistance 2) bright AMOLED display 2) 5G connectivity,4.1,high
+p062,xiaomi poco m7 pro,smartphone,39000,1) flagship processor 2) advanced camera system 2) AI photo editing 2) premium design 2) bright AMOLED display,4.1,medium
+p063,vivo vivo x200 pro,smartphone,35500,1) flagship processor 2) advanced camera system 2) gaming optimized 2) long battery life 2) bright AMOLED display 2) premium design,4.5,high
+p064,vivo vivo x200,smartphone,25000,1) flagship processor 2) advanced camera system 2) 5G connectivity 2) premium design 2) fast charging,4.6,medium
+p065,vivo vivo v50 pro,smartphone,36000,1) flagship processor 2) advanced camera system 2) bright AMOLED display 2) premium design 2) 5G connectivity,4.8,high
+p066,vivo vivo v50,smartphone,26000,1) flagship processor 2) advanced camera system 2) long battery life 2) fast charging 2) AI photo editing,4.7,high
+p067,vivo vivo t4 ultra,smartphone,46500,1) flagship processor 2) advanced camera system 2) gaming optimized 2) bright AMOLED display 2) fast charging 2) water resistance,4.2,medium
+p068,vivo vivo t4 5g,smartphone,25000,1) 5G connectivity 2) bright AMOLED display 2) fast charging,4.4,medium
+p069,vivo vivo y300 5g,smartphone,27500,1) water resistance 2) fast charging 2) bright AMOLED display,4.3,medium
+p070,vivo vivo y200 5g,smartphone,28000,1) premium design 2) bright AMOLED display 2) fast charging,4.7,medium
+p071,oppo oppo find x8 pro,smartphone,32500,1) flagship processor 2) advanced camera system 2) gaming optimized 2) bright AMOLED display 2) 5G connectivity 2) premium design,4.6,medium
+p072,oppo oppo find x8,smartphone,29500,1) gaming optimized 2) 5G connectivity 2) fast charging 2) bright AMOLED display,4.4,high
+p073,oppo oppo reno 13 pro,smartphone,37000,1) flagship processor 2) advanced camera system 2) gaming optimized 2) 5G connectivity 2) water resistance 2) premium design,4.1,medium
+p074,oppo oppo reno 13,smartphone,23000,1) flagship processor 2) advanced camera system 2) AI photo editing 2) water resistance 2) fast charging,4.4,medium
+p075,oppo oppo f29 pro,smartphone,36000,1) flagship processor 2) advanced camera system 2) fast charging 2) water resistance 2) long battery life,4.8,high
+p076,oppo oppo f29,smartphone,24000,1) gaming optimized 2) long battery life 2) water resistance 2) 5G connectivity,4.7,medium
+p077,oppo oppo a5 pro 5g,smartphone,31500,1) flagship processor 2) advanced camera system 2) 5G connectivity 2) water resistance 2) premium design,4.7,medium
+p078,oppo oppo a3x 5g,smartphone,23000,1) gaming optimized 2) AI photo editing 2) long battery life 2) water resistance,4.4,medium
+p079,realme realme gt 7 pro,smartphone,33000,1) flagship processor 2) advanced camera system 2) bright AMOLED display 2) AI photo editing 2) premium design,4.7,medium
+p080,realme realme gt 7,smartphone,20000,1) long battery life 2) bright AMOLED display 2) water resistance,4.1,medium
+p081,realme realme gt 6,smartphone,18000,1) fast charging 2) water resistance 2) bright AMOLED display,4.5,medium
+p082,realme realme 14 pro+,smartphone,26000,1) flagship processor 2) advanced camera system 2) gaming optimized 2) 5G connectivity 2) AI photo editing 2) water resistance,4.7,medium
+p083,realme realme 14 pro,smartphone,26500,1) flagship processor 2) advanced camera system 2) long battery life 2) premium design 2) fast charging,4.5,medium
+p084,realme realme p3 pro,smartphone,27500,1) flagship processor 2) advanced camera system 2) water resistance 2) bright AMOLED display 2) fast charging,4.8,medium
+p085,realme realme narzo 80 pro,smartphone,27500,1) flagship processor 2) advanced camera system 2) water resistance 2) fast charging 2) AI photo editing,4.3,high
+p086,realme realme c75 5g,smartphone,15000,1) gaming optimized 2) fast charging 2) long battery life 2) water resistance,4.7,medium
+p087,motorola motorola edge 60 ultra,smartphone,41500,1) flagship processor 2) advanced camera system 2) fast charging 2) bright AMOLED display 2) water resistance,4.2,medium
+p088,motorola motorola edge 60 pro,smartphone,29000,1) flagship processor 2) advanced camera system 2) bright AMOLED display 2) premium design 2) long battery life,4.7,high
+p089,motorola motorola edge 60,smartphone,18000,1) fast charging 2) AI photo editing 2) water resistance,4.7,high
+p090,motorola motorola razr 60 ultra,smartphone,46500,1) flagship processor 2) advanced camera system 2) premium design 2) AI photo editing 2) long battery life,4.2,high
+p091,motorola motorola razr 60,smartphone,12000,1) gaming optimized 2) water resistance 2) 5G connectivity 2) AI photo editing,4.8,medium
+p092,motorola moto g86 5g,smartphone,11000,1) gaming optimized 2) long battery life 2) bright AMOLED display 2) fast charging,4.3,high
+p093,motorola moto g85 5g,smartphone,15500,1) gaming optimized 2) fast charging 2) premium design 2) long battery life,4.7,medium
+p094,motorola moto g64 5g,smartphone,17500,1) AI photo editing 2) premium design 2) 5G connectivity,4.2,medium
+p095,nothing nothing phone (3),smartphone,25500,1) bright AMOLED display 2) long battery life 2) AI photo editing,4.2,high
+p096,nothing nothing phone (3a) pro,smartphone,30500,1) flagship processor 2) advanced camera system 2) premium design 2) bright AMOLED display 2) fast charging,4.6,medium
+p097,nothing nothing phone (3a),smartphone,20500,1) AI photo editing 2) bright AMOLED display 2) premium design,4.3,high
+p098,nothing nothing phone (2a) plus,smartphone,31500,1) gaming optimized 2) AI photo editing 2) water resistance 2) fast charging,4.2,medium
+p099,nothing nothing phone (2a),smartphone,20000,1) fast charging 2) bright AMOLED display 2) water resistance,4.2,medium
+p100,nothing cmf phone 2 pro,smartphone,30500,1) flagship processor 2) advanced camera system 2) bright AMOLED display 2) long battery life 2) premium design,4.2,high

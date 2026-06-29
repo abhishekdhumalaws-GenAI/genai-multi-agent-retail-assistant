@@ -1,41 +1,251 @@
 order_id,customer_id,product_id,product_name,order_status,shipping_status,return_exchange_status,order_date,delivery_date
-o001,cust001,prod001,zensound wireless headphones,delivered,delivered,not returned,10/25/24 10:00,10/30/24 12:00
-o002,cust002,prod002,vitafit smartwatch,shipped,in transit,not returned,10/28/24 14:00,11/3/24 16:00
-o003,cust003,prod003,promax laptop,delivered,delivered,returned,10/20/24 9:30,10/25/24 18:00
-o004,cust004,prod004,sonicwave bluetooth speaker,processing,not shipped,not returned,11/1/24 15:45,n/a
-o005,cust001,prod005,nova 5g smartphone,cancelled,n/a,not returned,11/2/24 11:20,n/a
-o006,cust003,prod002,vitafit smartwatch,delivered,delivered,not returned,10/17/24 13:45,10/22/24 11:30
-o007,cust004,prod001,zensound wireless headphones,shipped,in transit,not returned,10/12/24 9:15,10/18/24 14:50
-o008,cust005,prod003,promax laptop,delivered,delivered,returned,9/15/24 10:20,9/20/24 17:25
-o009,cust002,prod004,sonicwave bluetooth speaker,processing,not shipped,not returned,10/23/24 16:40,n/a
-o010,cust001,prod002,vitafit smartwatch,delivered,delivered,not returned,10/7/24 8:30,10/11/24 13:20
-o011,cust003,prod005,nova 5g smartphone,shipped,in transit,not returned,11/3/24 14:10,11/7/24 16:55
-o012,cust004,prod005,nova 5g smartphone,delivered,delivered,not returned,10/1/24 12:05,10/6/24 15:10
-o013,cust005,prod001,zensound wireless headphones,processing,not shipped,not returned,10/20/24 18:00,n/a
-o014,cust001,prod003,promax laptop,delivered,delivered,returned,9/25/24 9:10,10/1/24 15:30
-o015,cust002,prod003,promax laptop,delivered,delivered,not returned,9/18/24 12:45,9/23/24 19:50
-o016,cust003,prod004,sonicwave bluetooth speaker,shipped,in transit,not returned,9/15/24 14:55,9/21/24 10:40
-o017,cust004,prod002,vitafit smartwatch,delivered,delivered,returned,8/20/24 13:30,8/25/24 11:00
-o018,cust005,prod005,nova 5g smartphone,processing,not shipped,not returned,10/14/24 11:50,n/a
-o019,cust001,prod004,sonicwave bluetooth speaker,delivered,delivered,not returned,10/1/24 10:10,10/6/24 12:45
-o020,cust002,prod001,zensound wireless headphones,cancelled,n/a,not returned,10/9/24 16:00,n/a
-o021,cust006,prod006,soundsphere pro headphones,delivered,delivered,not returned,10/29/24 11:10,11/2/24 14:30
-o022,cust007,prod007,trackmaster smartwatch,shipped,in transit,not returned,10/27/24 13:40,11/1/24 16:10
-o023,cust008,prod008,thunderbolt speaker,processing,not shipped,not returned,11/5/24 9:20,n/a
-o024,cust009,prod009,ultrabook pro laptop,delivered,delivered,returned,10/15/24 15:30,10/22/24 17:20
-o025,cust010,prod010,gigabook gaming laptop,cancelled,n/a,not returned,10/25/24 12:50,n/a
-o026,cust011,prod011,flexTab convertible laptop,delivered,delivered,not returned,10/10/24 8:00,10/15/24 14:45
-o027,cust012,prod012,alpha one 5g,shipped,in transit,not returned,11/2/24 10:30,11/7/24 16:25
-o028,cust013,prod013,eclipse x smartphone,delivered,delivered,not returned,9/30/24 9:15,10/5/24 15:35
-o029,cust014,prod014,infinity ultra 5g,processing,not shipped,not returned,10/31/24 11:45,n/a
-o030,cust015,prod001,zensound wireless headphones,delivered,delivered,not returned,10/18/24 13:00,10/23/24 18:20
-o031,cust016,prod002,vitafit smartwatch,shipped,in transit,not returned,11/3/24 12:40,11/8/24 17:15
-o032,cust006,prod004,sonicwave bluetooth speaker,delivered,delivered,returned,10/8/24 10:25,10/12/24 16:45
-o033,cust007,prod005,nova 5g smartphone,delivered,delivered,not returned,10/3/24 15:15,10/9/24 13:35
-o034,cust008,prod006,soundsphere pro headphones,processing,not shipped,not returned,10/27/24 8:20,n/a
-o035,cust009,prod007,trackmaster smartwatch,shipped,in transit,not returned,11/1/24 14:00,11/6/24 18:25
-o036,cust010,prod008,thunderbolt speaker,delivered,delivered,not returned,10/11/24 9:50,10/16/24 14:10
-o037,cust011,prod009,ultrabook pro laptop,processing,not shipped,not returned,10/29/24 15:35,n/a
-o038,cust012,prod010,gigabook gaming laptop,shipped,in transit,not returned,10/20/24 10:55,10/25/24 15:45
-o039,cust013,prod011,flexTab convertible laptop,delivered,delivered,returned,9/10/24 11:10,9/15/24 16:20
-o040,cust014,prod012,alpha one 5g,delivered,delivered,not returned,10/15/24 12:00,10/20/24 14:30
+o001,cust071,p100,nothing cmf phone 2 pro,cancelled,cancelled,not returned,9/25/25 20:00,10/2/25 20:00
+o002,cust081,p092,motorola moto g86 5g,delivered,delivered,not returned,9/13/25 08:00,9/20/25 08:00
+o003,cust091,p014,apple iphone 15 plus,delivered,delivered,not returned,6/11/26 12:00,6/15/26 12:00
+o004,cust021,p027,samsung galaxy z fold7,returned,delivered,returned,2/14/26 22:00,2/18/26 22:00
+o005,cust059,p052,google pixel 9a,processing,not shipped,not returned,9/13/25 20:00,9/17/25 20:00
+o006,cust100,p096,nothing nothing phone (3a) pro,delivered,delivered,not returned,1/9/26 09:00,1/11/26 09:00
+o007,cust062,p067,vivo vivo t4 ultra,delivered,delivered,not returned,5/1/25 17:00,5/3/25 17:00
+o008,cust063,p034,oneplus oneplus 15r,returned,delivered,returned,8/22/25 17:00,8/29/25 17:00
+o009,cust021,p024,samsung galaxy s24 ultra,delivered,delivered,not returned,2/13/26 12:00,2/14/26 12:00
+o010,cust053,p067,vivo vivo t4 ultra,delivered,delivered,not returned,9/7/25 18:00,9/8/25 18:00
+o011,cust001,p024,samsung galaxy s24 ultra,delivered,delivered,not returned,4/1/26 13:00,4/3/26 13:00
+o012,cust031,p025,samsung galaxy s24+,cancelled,cancelled,not returned,5/26/25 20:00,5/28/25 20:00
+o013,cust075,p060,xiaomi poco f7 pro,delivered,delivered,not returned,4/18/26 11:00,4/23/26 11:00
+o014,cust024,p080,realme realme gt 7,shipped,in transit,not returned,2/27/25 20:00,3/4/25 20:00
+o015,cust098,p062,xiaomi poco m7 pro,delivered,delivered,not returned,6/18/25 17:00,6/19/25 17:00
+o016,cust100,p040,oneplus oneplus nord ce6,shipped,in transit,not returned,4/3/26 12:00,4/7/26 12:00
+o017,cust097,p053,xiaomi xiaomi 15 ultra,delivered,delivered,not returned,2/10/25 12:00,2/12/25 12:00
+o018,cust087,p023,samsung galaxy s25 edge,delivered,delivered,not returned,3/18/25 22:00,3/23/25 22:00
+o019,cust046,p067,vivo vivo t4 ultra,processing,not shipped,not returned,10/11/25 12:00,10/16/25 12:00
+o020,cust013,p086,realme realme c75 5g,delivered,delivered,not returned,2/23/25 21:00,2/28/25 21:00
+o021,cust046,p074,oppo oppo reno 13,delivered,delivered,not returned,2/16/26 10:00,2/22/26 10:00
+o022,cust092,p064,vivo vivo x200,delivered,delivered,not returned,8/24/25 15:00,8/29/25 15:00
+o023,cust062,p017,samsung galaxy s26 ultra,delivered,delivered,not returned,1/28/26 10:00,2/3/26 10:00
+o024,cust005,p052,google pixel 9a,delivered,delivered,not returned,6/13/26 10:00,6/17/26 10:00
+o025,cust045,p024,samsung galaxy s24 ultra,returned,delivered,returned,11/23/25 11:00,11/28/25 11:00
+o026,cust072,p099,nothing nothing phone (2a),returned,delivered,returned,1/8/25 08:00,1/11/25 08:00
+o027,cust003,p026,samsung galaxy s24,delivered,delivered,not returned,2/13/26 16:00,2/19/26 16:00
+o028,cust085,p064,vivo vivo x200,delivered,delivered,not returned,6/11/26 18:00,6/18/26 18:00
+o029,cust054,p054,xiaomi xiaomi 15,processing,not shipped,not returned,6/18/25 22:00,6/21/25 22:00
+o030,cust053,p033,oneplus oneplus 15,delivered,delivered,not returned,1/21/26 09:00,1/23/26 09:00
+o031,cust098,p025,samsung galaxy s24+,cancelled,cancelled,not returned,11/14/25 21:00,11/21/25 21:00
+o032,cust062,p019,samsung galaxy s26,delivered,delivered,not returned,5/11/25 21:00,5/17/25 21:00
+o033,cust090,p067,vivo vivo t4 ultra,returned,delivered,returned,6/8/25 21:00,6/14/25 21:00
+o034,cust011,p078,oppo oppo a3x 5g,delivered,delivered,not returned,10/29/25 17:00,11/5/25 17:00
+o035,cust056,p008,apple iphone 16,shipped,in transit,not returned,11/5/25 12:00,11/9/25 12:00
+o036,cust021,p084,realme realme p3 pro,delivered,delivered,not returned,4/30/26 10:00,5/7/26 10:00
+o037,cust038,p083,realme realme 14 pro,returned,delivered,returned,12/28/25 12:00,12/29/25 12:00
+o038,cust090,p022,samsung galaxy s25,shipped,in transit,not returned,4/13/26 14:00,4/16/26 14:00
+o039,cust037,p012,apple iphone 15 pro,delivered,delivered,not returned,1/7/26 13:00,1/10/26 13:00
+o040,cust086,p064,vivo vivo x200,delivered,delivered,not returned,12/2/25 20:00,12/6/25 20:00
+o041,cust071,p005,apple iphone 17e,delivered,delivered,not returned,3/9/25 21:00,3/13/25 21:00
+o042,cust051,p064,vivo vivo x200,delivered,delivered,not returned,6/23/25 21:00,6/29/25 21:00
+o043,cust064,p063,vivo vivo x200 pro,delivered,delivered,not returned,11/18/25 13:00,11/24/25 13:00
+o044,cust048,p031,samsung galaxy m56 5g,delivered,delivered,not returned,2/2/25 21:00,2/7/25 21:00
+o045,cust044,p062,xiaomi poco m7 pro,delivered,delivered,not returned,10/19/25 18:00,10/21/25 18:00
+o046,cust051,p027,samsung galaxy z fold7,delivered,delivered,not returned,3/25/26 22:00,3/28/26 22:00
+o047,cust077,p013,apple iphone 15,delivered,delivered,not returned,6/14/26 22:00,6/15/26 22:00
+o048,cust064,p049,google pixel 9 pro xl,processing,not shipped,not returned,9/26/25 16:00,9/29/25 16:00
+o049,cust053,p075,oppo oppo f29 pro,delivered,delivered,not returned,11/5/25 18:00,11/7/25 18:00
+o050,cust036,p042,oneplus oneplus open,cancelled,cancelled,not returned,12/3/25 19:00,12/7/25 19:00
+o051,cust060,p087,motorola motorola edge 60 ultra,cancelled,cancelled,not returned,6/13/25 13:00,6/16/25 13:00
+o052,cust054,p021,samsung galaxy s25+,delivered,delivered,not returned,3/24/26 08:00,3/27/26 08:00
+o053,cust027,p056,xiaomi xiaomi 14,delivered,delivered,not returned,5/26/26 14:00,5/29/26 14:00
+o054,cust093,p051,google pixel 9,delivered,delivered,not returned,1/6/26 22:00,1/13/26 22:00
+o055,cust024,p024,samsung galaxy s24 ultra,delivered,delivered,not returned,9/24/25 08:00,9/28/25 08:00
+o056,cust037,p046,google pixel 10,returned,delivered,returned,9/6/25 11:00,9/7/25 11:00
+o057,cust050,p059,xiaomi redmi note 14,cancelled,cancelled,not returned,4/13/25 08:00,4/18/25 08:00
+o058,cust078,p093,motorola moto g85 5g,delivered,delivered,not returned,4/18/26 12:00,4/23/26 12:00
+o059,cust092,p019,samsung galaxy s26,delivered,delivered,not returned,12/3/25 14:00,12/7/25 14:00
+o060,cust096,p051,google pixel 9,delivered,delivered,not returned,9/7/25 10:00,9/9/25 10:00
+o061,cust070,p071,oppo oppo find x8 pro,processing,not shipped,not returned,7/1/25 19:00,7/8/25 19:00
+o062,cust032,p050,google pixel 9 pro,cancelled,cancelled,not returned,3/14/25 13:00,3/20/25 13:00
+o063,cust009,p091,motorola motorola razr 60,delivered,delivered,not returned,2/22/25 11:00,2/23/25 11:00
+o064,cust016,p012,apple iphone 15 pro,shipped,in transit,not returned,3/6/25 12:00,3/10/25 12:00
+o065,cust078,p078,oppo oppo a3x 5g,delivered,delivered,not returned,4/12/25 20:00,4/18/25 20:00
+o066,cust054,p050,google pixel 9 pro,delivered,delivered,not returned,1/23/26 08:00,1/25/26 08:00
+o067,cust025,p016,apple iphone 14 plus,delivered,delivered,not returned,1/26/25 10:00,1/31/25 10:00
+o068,cust077,p065,vivo vivo v50 pro,delivered,delivered,not returned,4/14/26 08:00,4/15/26 08:00
+o069,cust012,p026,samsung galaxy s24,shipped,in transit,not returned,11/27/25 14:00,12/1/25 14:00
+o070,cust055,p071,oppo oppo find x8 pro,processing,not shipped,not returned,1/5/25 18:00,1/11/25 18:00
+o071,cust011,p094,motorola moto g64 5g,processing,not shipped,not returned,3/6/26 18:00,3/7/26 18:00
+o072,cust067,p044,google pixel 10 pro xl,delivered,delivered,not returned,10/14/25 12:00,10/16/25 12:00
+o073,cust019,p074,oppo oppo reno 13,delivered,delivered,not returned,11/7/25 19:00,11/8/25 19:00
+o074,cust031,p097,nothing nothing phone (3a),delivered,delivered,not returned,3/10/25 22:00,3/14/25 22:00
+o075,cust024,p074,oppo oppo reno 13,delivered,delivered,not returned,5/4/26 21:00,5/6/26 21:00
+o076,cust054,p025,samsung galaxy s24+,delivered,delivered,not returned,1/17/25 22:00,1/22/25 22:00
+o077,cust060,p034,oneplus oneplus 15r,delivered,delivered,not returned,5/5/25 11:00,5/7/25 11:00
+o078,cust046,p069,vivo vivo y300 5g,delivered,delivered,not returned,2/11/25 13:00,2/12/25 13:00
+o079,cust003,p002,apple iphone 17 pro,processing,not shipped,not returned,9/30/25 18:00,10/7/25 18:00
+o080,cust019,p046,google pixel 10,shipped,in transit,not returned,4/30/26 17:00,5/2/26 17:00
+o081,cust090,p009,apple iphone 16 plus,returned,delivered,returned,2/21/25 12:00,2/26/25 12:00
+o082,cust080,p057,xiaomi redmi note 14 pro+,delivered,delivered,not returned,6/14/26 22:00,6/17/26 22:00
+o083,cust037,p008,apple iphone 16,delivered,delivered,not returned,5/31/25 08:00,6/6/25 08:00
+o084,cust058,p026,samsung galaxy s24,processing,not shipped,not returned,6/5/26 20:00,6/6/26 20:00
+o085,cust036,p004,apple iphone air,delivered,delivered,not returned,5/16/26 11:00,5/19/26 11:00
+o086,cust085,p038,oneplus oneplus 12r,delivered,delivered,not returned,11/14/25 15:00,11/18/25 15:00
+o087,cust091,p067,vivo vivo t4 ultra,delivered,delivered,not returned,12/8/25 15:00,12/15/25 15:00
+o088,cust033,p038,oneplus oneplus 12r,delivered,delivered,not returned,5/30/26 19:00,5/31/26 19:00
+o089,cust009,p011,apple iphone 15 pro max,shipped,in transit,not returned,11/17/25 17:00,11/23/25 17:00
+o090,cust075,p005,apple iphone 17e,processing,not shipped,not returned,11/29/25 16:00,12/5/25 16:00
+o091,cust082,p021,samsung galaxy s25+,delivered,delivered,not returned,9/21/25 18:00,9/28/25 18:00
+o092,cust067,p072,oppo oppo find x8,returned,delivered,returned,8/9/25 19:00,8/12/25 19:00
+o093,cust067,p072,oppo oppo find x8,delivered,delivered,not returned,4/3/25 11:00,4/4/25 11:00
+o094,cust063,p062,xiaomi poco m7 pro,delivered,delivered,not returned,1/2/25 21:00,1/4/25 21:00
+o095,cust069,p059,xiaomi redmi note 14,processing,not shipped,not returned,3/13/26 15:00,3/14/26 15:00
+o096,cust043,p028,samsung galaxy z flip7,delivered,delivered,not returned,3/28/25 09:00,4/2/25 09:00
+o097,cust080,p050,google pixel 9 pro,delivered,delivered,not returned,11/28/25 15:00,12/1/25 15:00
+o098,cust014,p039,oneplus oneplus nord 5,delivered,delivered,not returned,9/11/25 12:00,9/12/25 12:00
+o099,cust005,p041,oneplus oneplus nord ce6 lite,returned,delivered,returned,3/2/25 10:00,3/6/25 10:00
+o100,cust025,p092,motorola moto g86 5g,delivered,delivered,not returned,6/12/26 20:00,6/13/26 20:00
+o101,cust012,p062,xiaomi poco m7 pro,returned,delivered,returned,3/29/26 17:00,4/5/26 17:00
+o102,cust080,p005,apple iphone 17e,returned,delivered,returned,2/6/25 20:00,2/11/25 20:00
+o103,cust014,p063,vivo vivo x200 pro,delivered,delivered,not returned,11/24/25 22:00,12/1/25 22:00
+o104,cust063,p005,apple iphone 17e,delivered,delivered,not returned,12/10/25 20:00,12/16/25 20:00
+o105,cust029,p037,oneplus oneplus 12,delivered,delivered,not returned,3/9/25 19:00,3/11/25 19:00
+o106,cust035,p072,oppo oppo find x8,returned,delivered,returned,2/5/25 11:00,2/12/25 11:00
+o107,cust078,p050,google pixel 9 pro,processing,not shipped,not returned,3/5/25 16:00,3/7/25 16:00
+o108,cust093,p006,apple iphone 16 pro max,delivered,delivered,not returned,12/6/25 08:00,12/10/25 08:00
+o109,cust016,p063,vivo vivo x200 pro,delivered,delivered,not returned,9/15/25 13:00,9/18/25 13:00
+o110,cust044,p091,motorola motorola razr 60,delivered,delivered,not returned,6/1/26 16:00,6/4/26 16:00
+o111,cust022,p017,samsung galaxy s26 ultra,delivered,delivered,not returned,11/23/25 12:00,11/29/25 12:00
+o112,cust076,p002,apple iphone 17 pro,delivered,delivered,not returned,4/3/25 11:00,4/7/25 11:00
+o113,cust056,p018,samsung galaxy s26+,delivered,delivered,not returned,1/5/26 18:00,1/12/26 18:00
+o114,cust029,p069,vivo vivo y300 5g,delivered,delivered,not returned,8/17/25 18:00,8/24/25 18:00
+o115,cust020,p055,xiaomi xiaomi 14 ultra,delivered,delivered,not returned,1/6/26 12:00,1/10/26 12:00
+o116,cust080,p050,google pixel 9 pro,delivered,delivered,not returned,8/25/25 08:00,9/1/25 08:00
+o117,cust068,p072,oppo oppo find x8,delivered,delivered,not returned,1/26/26 19:00,1/28/26 19:00
+o118,cust014,p011,apple iphone 15 pro max,delivered,delivered,not returned,3/27/26 14:00,4/2/26 14:00
+o119,cust073,p008,apple iphone 16,delivered,delivered,not returned,3/15/26 14:00,3/18/26 14:00
+o120,cust025,p042,oneplus oneplus open,shipped,in transit,not returned,5/18/26 13:00,5/25/26 13:00
+o121,cust034,p016,apple iphone 14 plus,delivered,delivered,not returned,2/19/26 16:00,2/20/26 16:00
+o122,cust051,p083,realme realme 14 pro,shipped,in transit,not returned,5/7/25 09:00,5/8/25 09:00
+o123,cust069,p025,samsung galaxy s24+,shipped,in transit,not returned,4/25/26 08:00,5/2/26 08:00
+o124,cust010,p078,oppo oppo a3x 5g,delivered,delivered,not returned,3/8/26 19:00,3/13/26 19:00
+o125,cust001,p057,xiaomi redmi note 14 pro+,shipped,in transit,not returned,5/25/26 17:00,5/29/26 17:00
+o126,cust046,p039,oneplus oneplus nord 5,processing,not shipped,not returned,5/16/25 17:00,5/18/25 17:00
+o127,cust004,p014,apple iphone 15 plus,delivered,delivered,not returned,3/28/25 08:00,3/29/25 08:00
+o128,cust086,p025,samsung galaxy s24+,shipped,in transit,not returned,8/25/25 21:00,8/26/25 21:00
+o129,cust087,p098,nothing nothing phone (2a) plus,returned,delivered,returned,2/8/26 18:00,2/9/26 18:00
+o130,cust069,p094,motorola moto g64 5g,delivered,delivered,not returned,6/3/26 19:00,6/5/26 19:00
+o131,cust094,p084,realme realme p3 pro,delivered,delivered,not returned,1/25/25 10:00,1/29/25 10:00
+o132,cust018,p069,vivo vivo y300 5g,processing,not shipped,not returned,10/9/25 19:00,10/11/25 19:00
+o133,cust031,p034,oneplus oneplus 15r,processing,not shipped,not returned,4/19/25 13:00,4/21/25 13:00
+o134,cust022,p100,nothing cmf phone 2 pro,delivered,delivered,not returned,3/17/26 14:00,3/19/26 14:00
+o135,cust091,p081,realme realme gt 6,delivered,delivered,not returned,12/22/25 11:00,12/23/25 11:00
+o136,cust028,p040,oneplus oneplus nord ce6,shipped,in transit,not returned,3/29/26 20:00,4/1/26 20:00
+o137,cust092,p021,samsung galaxy s25+,processing,not shipped,not returned,7/11/25 11:00,7/15/25 11:00
+o138,cust063,p005,apple iphone 17e,cancelled,cancelled,not returned,5/17/26 21:00,5/21/26 21:00
+o139,cust027,p027,samsung galaxy z fold7,delivered,delivered,not returned,4/1/26 16:00,4/8/26 16:00
+o140,cust057,p068,vivo vivo t4 5g,delivered,delivered,not returned,11/16/25 13:00,11/20/25 13:00
+o141,cust067,p014,apple iphone 15 plus,delivered,delivered,not returned,8/3/25 22:00,8/10/25 22:00
+o142,cust003,p044,google pixel 10 pro xl,delivered,delivered,not returned,6/2/26 20:00,6/9/26 20:00
+o143,cust007,p038,oneplus oneplus 12r,delivered,delivered,not returned,3/16/26 10:00,3/17/26 10:00
+o144,cust054,p062,xiaomi poco m7 pro,cancelled,cancelled,not returned,1/20/26 17:00,1/23/26 17:00
+o145,cust012,p022,samsung galaxy s25,delivered,delivered,not returned,3/7/25 20:00,3/9/25 20:00
+o146,cust034,p005,apple iphone 17e,delivered,delivered,not returned,5/18/26 13:00,5/21/26 13:00
+o147,cust098,p032,samsung galaxy f56 5g,shipped,in transit,not returned,2/12/26 16:00,2/14/26 16:00
+o148,cust075,p010,apple iphone 16e,shipped,in transit,not returned,2/11/25 10:00,2/12/25 10:00
+o149,cust067,p071,oppo oppo find x8 pro,returned,delivered,returned,6/10/25 10:00,6/11/25 10:00
+o150,cust006,p080,realme realme gt 7,delivered,delivered,not returned,6/5/25 19:00,6/8/25 19:00
+o151,cust058,p005,apple iphone 17e,delivered,delivered,not returned,2/3/26 19:00,2/6/26 19:00
+o152,cust078,p029,samsung galaxy a56 5g,delivered,delivered,not returned,1/22/26 08:00,1/28/26 08:00
+o153,cust079,p100,nothing cmf phone 2 pro,delivered,delivered,not returned,1/7/26 19:00,1/12/26 19:00
+o154,cust075,p060,xiaomi poco f7 pro,delivered,delivered,not returned,9/6/25 09:00,9/10/25 09:00
+o155,cust020,p047,google pixel 10a,cancelled,cancelled,not returned,1/25/26 10:00,1/27/26 10:00
+o156,cust034,p040,oneplus oneplus nord ce6,delivered,delivered,not returned,6/1/26 22:00,6/7/26 22:00
+o157,cust031,p082,realme realme 14 pro+,shipped,in transit,not returned,4/16/26 22:00,4/21/26 22:00
+o158,cust079,p006,apple iphone 16 pro max,delivered,delivered,not returned,4/14/26 10:00,4/20/26 10:00
+o159,cust068,p064,vivo vivo x200,delivered,delivered,not returned,1/14/25 11:00,1/17/25 11:00
+o160,cust056,p044,google pixel 10 pro xl,delivered,delivered,not returned,1/13/26 15:00,1/15/26 15:00
+o161,cust024,p053,xiaomi xiaomi 15 ultra,cancelled,cancelled,not returned,5/10/26 20:00,5/15/26 20:00
+o162,cust062,p089,motorola motorola edge 60,shipped,in transit,not returned,9/24/25 08:00,9/28/25 08:00
+o163,cust047,p067,vivo vivo t4 ultra,cancelled,cancelled,not returned,12/7/25 13:00,12/8/25 13:00
+o164,cust091,p093,motorola moto g85 5g,processing,not shipped,not returned,5/28/25 10:00,5/30/25 10:00
+o165,cust038,p064,vivo vivo x200,delivered,delivered,not returned,5/24/26 22:00,5/28/26 22:00
+o166,cust063,p051,google pixel 9,delivered,delivered,not returned,3/2/26 10:00,3/6/26 10:00
+o167,cust002,p082,realme realme 14 pro+,delivered,delivered,not returned,5/30/25 08:00,6/3/25 08:00
+o168,cust011,p099,nothing nothing phone (2a),processing,not shipped,not returned,4/27/25 11:00,5/3/25 11:00
+o169,cust057,p094,motorola moto g64 5g,cancelled,cancelled,not returned,5/25/26 20:00,6/1/26 20:00
+o170,cust016,p099,nothing nothing phone (2a),delivered,delivered,not returned,9/14/25 19:00,9/15/25 19:00
+o171,cust040,p046,google pixel 10,cancelled,cancelled,not returned,1/15/25 19:00,1/18/25 19:00
+o172,cust097,p064,vivo vivo x200,delivered,delivered,not returned,6/25/26 20:00,6/27/26 20:00
+o173,cust082,p066,vivo vivo v50,shipped,in transit,not returned,3/22/26 15:00,3/25/26 15:00
+o174,cust046,p002,apple iphone 17 pro,delivered,delivered,not returned,1/8/25 17:00,1/15/25 17:00
+o175,cust001,p075,oppo oppo f29 pro,cancelled,cancelled,not returned,3/5/25 21:00,3/9/25 21:00
+o176,cust067,p066,vivo vivo v50,delivered,delivered,not returned,5/6/26 20:00,5/7/26 20:00
+o177,cust084,p070,vivo vivo y200 5g,delivered,delivered,not returned,11/27/25 13:00,12/4/25 13:00
+o178,cust043,p075,oppo oppo f29 pro,delivered,delivered,not returned,1/28/26 19:00,2/3/26 19:00
+o179,cust062,p011,apple iphone 15 pro max,shipped,in transit,not returned,5/3/25 14:00,5/6/25 14:00
+o180,cust038,p088,motorola motorola edge 60 pro,delivered,delivered,not returned,4/23/25 11:00,4/29/25 11:00
+o181,cust040,p062,xiaomi poco m7 pro,cancelled,cancelled,not returned,2/15/26 21:00,2/17/26 21:00
+o182,cust084,p057,xiaomi redmi note 14 pro+,processing,not shipped,not returned,4/5/26 10:00,4/10/26 10:00
+o183,cust011,p019,samsung galaxy s26,delivered,delivered,not returned,4/25/25 17:00,4/26/25 17:00
+o184,cust011,p007,apple iphone 16 pro,shipped,in transit,not returned,3/7/26 09:00,3/12/26 09:00
+o185,cust034,p076,oppo oppo f29,delivered,delivered,not returned,7/1/25 16:00,7/5/25 16:00
+o186,cust020,p045,google pixel 10 pro,delivered,delivered,not returned,6/16/26 15:00,6/20/26 15:00
+o187,cust081,p100,nothing cmf phone 2 pro,shipped,in transit,not returned,3/26/25 14:00,3/31/25 14:00
+o188,cust075,p048,google pixel 9 pro fold,delivered,delivered,not returned,4/28/25 10:00,4/30/25 10:00
+o189,cust070,p046,google pixel 10,delivered,delivered,not returned,4/5/25 10:00,4/8/25 10:00
+o190,cust092,p059,xiaomi redmi note 14,returned,delivered,returned,1/13/26 18:00,1/17/26 18:00
+o191,cust078,p025,samsung galaxy s24+,processing,not shipped,not returned,7/10/25 18:00,7/15/25 18:00
+o192,cust030,p061,xiaomi poco x7 pro,delivered,delivered,not returned,3/29/25 08:00,3/30/25 08:00
+o193,cust091,p053,xiaomi xiaomi 15 ultra,cancelled,cancelled,not returned,3/6/26 18:00,3/9/26 18:00
+o194,cust077,p067,vivo vivo t4 ultra,shipped,in transit,not returned,8/31/25 09:00,9/3/25 09:00
+o195,cust053,p047,google pixel 10a,delivered,delivered,not returned,11/29/25 21:00,12/6/25 21:00
+o196,cust088,p006,apple iphone 16 pro max,delivered,delivered,not returned,9/23/25 09:00,9/28/25 09:00
+o197,cust031,p029,samsung galaxy a56 5g,cancelled,cancelled,not returned,5/16/26 14:00,5/21/26 14:00
+o198,cust004,p068,vivo vivo t4 5g,cancelled,cancelled,not returned,2/23/25 21:00,2/28/25 21:00
+o199,cust055,p009,apple iphone 16 plus,delivered,delivered,not returned,7/2/25 15:00,7/9/25 15:00
+o200,cust053,p054,xiaomi xiaomi 15,delivered,delivered,not returned,12/3/25 08:00,12/8/25 08:00
+o201,cust029,p007,apple iphone 16 pro,delivered,delivered,not returned,8/5/25 16:00,8/8/25 16:00
+o202,cust028,p048,google pixel 9 pro fold,delivered,delivered,not returned,4/9/26 13:00,4/15/26 13:00
+o203,cust013,p065,vivo vivo v50 pro,delivered,delivered,not returned,3/17/25 11:00,3/20/25 11:00
+o204,cust091,p044,google pixel 10 pro xl,delivered,delivered,not returned,10/24/25 14:00,10/30/25 14:00
+o205,cust028,p086,realme realme c75 5g,delivered,delivered,not returned,7/10/25 17:00,7/17/25 17:00
+o206,cust026,p030,samsung galaxy a36 5g,delivered,delivered,not returned,2/28/26 17:00,3/3/26 17:00
+o207,cust050,p008,apple iphone 16,delivered,delivered,not returned,4/21/26 20:00,4/28/26 20:00
+o208,cust056,p054,xiaomi xiaomi 15,delivered,delivered,not returned,5/24/26 20:00,5/26/26 20:00
+o209,cust070,p082,realme realme 14 pro+,delivered,delivered,not returned,6/17/25 09:00,6/23/25 09:00
+o210,cust068,p089,motorola motorola edge 60,delivered,delivered,not returned,5/31/25 09:00,6/4/25 09:00
+o211,cust026,p069,vivo vivo y300 5g,delivered,delivered,not returned,4/6/25 21:00,4/13/25 21:00
+o212,cust026,p065,vivo vivo v50 pro,delivered,delivered,not returned,5/12/25 19:00,5/16/25 19:00
+o213,cust091,p083,realme realme 14 pro,delivered,delivered,not returned,5/30/25 19:00,6/5/25 19:00
+o214,cust098,p081,realme realme gt 6,delivered,delivered,not returned,2/18/26 19:00,2/22/26 19:00
+o215,cust025,p026,samsung galaxy s24,delivered,delivered,not returned,7/14/25 10:00,7/16/25 10:00
+o216,cust051,p096,nothing nothing phone (3a) pro,delivered,delivered,not returned,5/14/26 12:00,5/21/26 12:00
+o217,cust081,p023,samsung galaxy s25 edge,delivered,delivered,not returned,8/17/25 12:00,8/18/25 12:00
+o218,cust040,p045,google pixel 10 pro,delivered,delivered,not returned,9/25/25 10:00,10/1/25 10:00
+o219,cust005,p062,xiaomi poco m7 pro,delivered,delivered,not returned,4/8/25 21:00,4/12/25 21:00
+o220,cust081,p051,google pixel 9,shipped,in transit,not returned,5/28/25 22:00,6/4/25 22:00
+o221,cust097,p058,xiaomi redmi note 14 pro,delivered,delivered,not returned,1/29/25 22:00,2/4/25 22:00
+o222,cust072,p050,google pixel 9 pro,delivered,delivered,not returned,2/27/25 15:00,2/28/25 15:00
+o223,cust046,p045,google pixel 10 pro,shipped,in transit,not returned,2/1/26 12:00,2/2/26 12:00
+o224,cust016,p066,vivo vivo v50,processing,not shipped,not returned,2/19/25 21:00,2/21/25 21:00
+o225,cust042,p059,xiaomi redmi note 14,shipped,in transit,not returned,4/29/26 14:00,5/4/26 14:00
+o226,cust003,p062,xiaomi poco m7 pro,cancelled,cancelled,not returned,1/26/26 16:00,1/30/26 16:00
+o227,cust012,p004,apple iphone air,processing,not shipped,not returned,10/17/25 19:00,10/24/25 19:00
+o228,cust051,p063,vivo vivo x200 pro,delivered,delivered,not returned,10/20/25 18:00,10/27/25 18:00
+o229,cust041,p086,realme realme c75 5g,delivered,delivered,not returned,11/23/25 11:00,11/24/25 11:00
+o230,cust099,p086,realme realme c75 5g,shipped,in transit,not returned,7/4/25 19:00,7/10/25 19:00
+o231,cust058,p008,apple iphone 16,delivered,delivered,not returned,7/31/25 11:00,8/4/25 11:00
+o232,cust065,p073,oppo oppo reno 13 pro,returned,delivered,returned,3/21/25 11:00,3/27/25 11:00
+o233,cust046,p097,nothing nothing phone (3a),shipped,in transit,not returned,6/13/26 09:00,6/18/26 09:00
+o234,cust022,p016,apple iphone 14 plus,delivered,delivered,not returned,11/23/25 10:00,11/25/25 10:00
+o235,cust017,p021,samsung galaxy s25+,delivered,delivered,not returned,1/9/26 16:00,1/16/26 16:00
+o236,cust048,p041,oneplus oneplus nord ce6 lite,shipped,in transit,not returned,3/21/26 12:00,3/26/26 12:00
+o237,cust079,p077,oppo oppo a5 pro 5g,delivered,delivered,not returned,6/8/25 22:00,6/10/25 22:00
+o238,cust061,p055,xiaomi xiaomi 14 ultra,delivered,delivered,not returned,11/17/25 09:00,11/19/25 09:00
+o239,cust058,p080,realme realme gt 7,delivered,delivered,not returned,5/15/25 11:00,5/22/25 11:00
+o240,cust015,p003,apple iphone 17,processing,not shipped,not returned,3/15/25 17:00,3/22/25 17:00
+o241,cust017,p064,vivo vivo x200,delivered,delivered,not returned,5/15/26 17:00,5/19/26 17:00
+o242,cust001,p049,google pixel 9 pro xl,delivered,delivered,not returned,3/6/26 16:00,3/11/26 16:00
+o243,cust065,p067,vivo vivo t4 ultra,delivered,delivered,not returned,8/25/25 14:00,8/29/25 14:00
+o244,cust003,p064,vivo vivo x200,delivered,delivered,not returned,4/7/26 11:00,4/10/26 11:00
+o245,cust009,p041,oneplus oneplus nord ce6 lite,cancelled,cancelled,not returned,8/27/25 14:00,9/3/25 14:00
+o246,cust034,p011,apple iphone 15 pro max,delivered,delivered,not returned,1/30/26 14:00,2/3/26 14:00
+o247,cust001,p016,apple iphone 14 plus,shipped,in transit,not returned,1/16/25 22:00,1/21/25 22:00
+o248,cust067,p052,google pixel 9a,processing,not shipped,not returned,12/3/25 09:00,12/5/25 09:00
+o249,cust096,p072,oppo oppo find x8,cancelled,cancelled,not returned,2/13/26 20:00,2/17/26 20:00
+o250,cust017,p042,oneplus oneplus open,processing,not shipped,not returned,5/10/25 11:00,5/12/25 11:00

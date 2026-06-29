@@ -62,7 +62,7 @@
     },
     "dependencies": {
         "@aws-sdk/client-cloudformation": "*",
-        "chalk": "latest",
+        "chalk": "^4.1.2",
         "enquirer": "latest",
         "yaml": "latest",
         "zod": "latest"
